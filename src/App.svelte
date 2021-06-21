@@ -1,30 +1,40 @@
 <script>
-	export let name;
+	import { Router, Route, Link } from "svelte-navigator";
+	import Navbar from './components/Navbar.svelte';
+	import Home from './components/Home.svelte';
+	import Events from './components/Events.svelte';
+	import Members from './components/Members.svelte';
+	import Alumni from './components/Alumni.svelte';
+	import Learn from './components/Learn.svelte';
+	import Register from './components/Register.svelte';
+	import Footer from './components/Footer.svelte';
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Router>
+	<header>
+		<Navbar/>
+	</header>
+	<main>
+		<Route path="/">
+			<Home />
+		</Route>
+		<Route path="events">
+			<Events />
+		</Route>
+		<Route path="members">
+			<Members />
+		</Route>
+		<Route path="alumni">
+			<Alumni />
+		</Route>
+		<Route path="learn">
+			<Learn />
+		</Route>
+		<Route path="register">
+			<Register />
+		</Route>
+	</main>
+	<footer>
+		<Footer/>
+	</footer>
+</Router>
