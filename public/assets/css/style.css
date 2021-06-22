@@ -1,5 +1,13 @@
 body {
-    background-color: #030303;
+    background-color: rgb(2,2,2);
     color: #FFFFFF;
     font-family: Inter;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100%;
+    margin-bottom: -50px;
 }

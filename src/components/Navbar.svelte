@@ -16,7 +16,7 @@
         padding-right: 5vw;
         padding-top: 2vh;
         padding-bottom: 2vh;
-        background-color: #030303;
+        background-color:transparent;
         width: 90vw;
         height: 5.5vh;
         display: flex;
@@ -27,7 +27,7 @@
     nav img {
         width: 3vw;
         height: 3vw;
-        margin-top: -0.5vh;
+        /* margin-top: -0.5vh; */
     }
 
     nav .right {

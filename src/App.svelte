@@ -34,7 +34,5 @@
 			<Register />
 		</Route>
 	</main>
-	<footer>
-		<Footer/>
-	</footer>
+	<Footer/>
 </Router>
