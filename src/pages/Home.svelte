@@ -19,10 +19,8 @@
     .first-section img {
         height: auto;
         width: 90vw;
-        margin-left: 35vh;
-        /* margin-left: 25vw; */
-        margin-top: -5vh;
-        /* background-color: */
+        margin-left: 15vw;
+        margin-top: -25vh;
     }
 
     .first-section .text {
@@ -202,21 +200,17 @@
     <div class="second-section">
         <div class="left">
             <h1><span style="color: #16e16e">Robotronics</span> '21</h1>
-            <p> Robotronics 2020, the 7th edition of Tech Syndicate's annual
-                event, which saw participation from over 300+ students from 35
-                schools and 40+ individual teams across Delhi NCR, was an
-                astounding success.
+            <p> Robotronics '21, the 8th edition of Tech Syndicate's annual event, will take place from 20th July to 30th July. Beginning as a robotics exclusive symposium, Robotronics has now evolved and branched out to include in events across a much wider variety of domains.
                 <br />
                 <br />
-                Participants across events exhibited their creativity by proposing
-                solutions to societal problems, rebranding a fictional company,
-                solving tasks of cryptography and steganography, and debating on
-                topics like privatisation of NASA programs and the use of AI/ML to
-                replace human judgement.
+                Being shifted to an online medium, Robotronics has scaled up to become one of the most awaited tech symposiums in Delhi, with over 300+ students from 35 schools and 40+ individual teams across Delhi NCR taking part in 2020.
                 <br />
                 <br />
-                Delhi Public School, R.K. Puram's Exun Clan emerged as the overall
-                winners.</p>
+                This year, there will be 10 events taking place for both juniors and seniors. There will be one school crowned as the overall winner after taking into consideration all the 10 events.
+                <br/>
+                <br/>
+                Revolutionize.
+            </p>
         </div>
         <div class="right">
             <img src="/assets/images/tscircuitglow.png" alt="ts-illus-2-glow">

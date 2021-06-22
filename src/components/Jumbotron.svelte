@@ -5,12 +5,13 @@
 <style>
     h1 {
         color: #16e16e;
-        font-size: 2.6rem;
+        font-size: 2.8vw;
     }
 
     p {
         color: #f3f3f3;
         margin-right: 20vw;
+        font-size: 1.2vw;
     }
 </style>
 

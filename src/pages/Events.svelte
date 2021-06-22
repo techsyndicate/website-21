@@ -8,10 +8,10 @@
 <body>
   <Jumbotron
     title="Events"
-    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    description="Robotronics '21 comprises of 10 events, spanned across grades 3-12. There will be one overall prize, competing for which will require proficiency across a wide variety of fields."
   />
 
-  <div style="height: 2vh" />
+  <div style="height: 5vh" />
 
   {#each events as rows}
     <div style="display: flex; justify-content: space-between;">
@@ -30,7 +30,7 @@
     <div style="height: 8vh" />
   {/each}
 
-  <div style="height: 2vh" />
+  <div style="height: 10vh" />
 </body>
 
 <style>

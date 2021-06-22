@@ -1,0 +1,74 @@
+[
+    [
+        {
+            "name": "Oorjit Chowdhary",
+            "role": "President",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "website": "https://oorjit.co"
+        },
+        {
+            "name": "Mihir Aggarwal",
+            "role": "Vice President",
+            "image": "https://github.com/mihiraggarwal.png",
+            "website": "https://mihiraggarwal.co"
+        },
+        {
+            "name": "Anshul Saha",
+            "role": "Secretary",
+            "image": "https://github.com/sheldor1510.png",
+            "website": "https://anshul.tk"
+        }
+    ],
+    [
+        {
+            "name": "Jai Madhukar",
+            "role": "Joint Secretary",
+            "image": "https://github.com/Jai-17.png"
+        },
+        {
+            "name": "Vaibhav Sharma",
+            "role": "Core",
+            "image": "https://github.com/gigabite-pro.png"
+        },
+        {
+            "name": "Tanush Guha",
+            "role": "Member",
+            "image": "https://github.com/valkyrie-vulcan.png"
+        }
+    ],
+    [
+        {
+            "name": "Amogh Arya",
+            "role": "Member",
+            "image": "https://github.com/amogharya.png"
+        },
+        {
+            "name": "Nevis Kawatra",
+            "role": "Member",
+            "image": "https://github.com/NotNevisKawatra.png"
+        },
+        {
+            "name": "Gobind Anand",
+            "role": "Member",
+            "image": "https://github.com/GobindAnand.png"
+        }
+    ],
+    [
+        {
+            "name": "Aayush Garg",
+            "role": "Member",
+            "image": "https://media.discordapp.net/attachments/777573951413026826/777962350900412436/IMG_20201116_234743.jpg",
+            "website": "https://www.aayushgarg.net"
+        },
+        {
+            "name": "Shaurya Sisaudia",
+            "role": "Member",
+            "image": "https://media.discordapp.net/attachments/704990127998500894/772832066307227668/shr.png"
+        },
+        {
+            "name": "Omar Usmani",
+            "role": "Member",
+            "image": "https://github.com/Jazzuma.png"
+        }
+    ]
+]

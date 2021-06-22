@@ -18,9 +18,11 @@
     .card {
         border-radius: 14px;
         padding: 1.5vh 1.5vw;
+        padding-top: 0.1vh;
         max-width: 16vw;
         z-index: 2;
         overflow: hidden;
+        position: relative;
     }
 
     .bottom-items {
@@ -46,5 +48,20 @@
 
     p {
         font-size: 2vh;
+    }
+
+    h3 {
+      font-size: 3vh;
+    }
+
+    .card-button {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 1.5vw;
+      font-size: 1vw;
+    }
+
+    .bottom-items img {
+      margin-left: 7.5vw;
     }
 </style>
