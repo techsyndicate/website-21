@@ -148,7 +148,7 @@
         height:55vh;
         position: absolute;
         right: 0;
-        margin-right: 5vw;
+        margin-right: 6vw;
         /* background-color: aqua; */
         margin-top: -13vh;
     }

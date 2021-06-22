@@ -8,10 +8,6 @@
         display: flex;
         justify-content: center;
     }
-
-    .wrapper {
-        margin-left: -5vw
-    }
     
     .links {
         display: flex;
