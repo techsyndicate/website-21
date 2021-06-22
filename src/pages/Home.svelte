@@ -21,6 +21,7 @@
         width: 90vw;
         margin-left: 15vw;
         margin-top: -25vh;
+        opacity: 0.72;
     }
 
     .first-section .text {
@@ -179,7 +180,7 @@
 <body>
     <div class="first-section">
         <div>
-            <img src="/assets/images/illus-bg.png" alt="illus-bg">
+            <img src="/assets/images/illus-bg-2.png" alt="illus-bg">
         </div>
         <div class="text">
             <h1>ROBOTRONICS '21</h1>
