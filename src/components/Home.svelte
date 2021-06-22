@@ -1,3 +1,6 @@
+<script>
+    import { Link } from 'svelte-navigator';
+</script>
 
 <header>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -34,6 +37,7 @@
 
     .text h1 {
         font-size: 3vw;
+        outline: none;
     }
 
     .text p {
@@ -148,7 +152,7 @@
         height:55vh;
         position: absolute;
         right: 0;
-        margin-right: 6vw;
+        margin-right: 5vw;
         /* background-color: aqua; */
         margin-top: -13vh;
     }
@@ -183,7 +187,7 @@
             <h1>ROBOTRONICS '21</h1>
             <p>26th July - 6th August </p>
             <div class="buttons">
-                <span class="nav-link-button">Register</span>
+                <Link to='/register' style="text-decoration: none;"><span class="nav-link-button">Register</span></Link>
                 <a class="video-play-button" data-fancybox href="https://www.youtube.com/watch?v=oEr_jwRZ07A&feature=youtu.be">
                     <span class="watch">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24.534" height="24.534" viewBox="0 0 29.534 29.534" style="margin-right: 0.5vw;">
@@ -245,7 +249,7 @@
                 events under it, Robotronics receives participation from 300+
                 students across Delhi NCR.
             </p><br>
-            <span class="nav-link-button" id="discord">Discord</span>
+            <a class="nav-link-button" id="discord" href="/discord" target="_blank">Discord</a>
         </div>
     </div>
 </body>

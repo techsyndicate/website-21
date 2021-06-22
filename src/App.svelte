@@ -8,6 +8,7 @@
 	import Learn from './components/Learn.svelte';
 	import Register from './components/Register.svelte';
 	import Footer from './components/Footer.svelte';
+	import NotFound from './components/NotFound.svelte';
 </script>
 
 <Router>
@@ -33,6 +34,7 @@
 		<Route path="register">
 			<Register />
 		</Route>
+		<Route component="{NotFound}" />
 	</main>
 	<Footer/>
 </Router>
