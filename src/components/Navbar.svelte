@@ -8,10 +8,6 @@
 
 <style>
     nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
         padding-left: 5vw;
         padding-right: 5vw;
         padding-top: 2vh;

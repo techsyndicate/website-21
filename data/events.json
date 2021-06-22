@@ -1,0 +1,100 @@
+[
+    [
+        {
+            "name": "Hackathon",
+            "eligibility": "IX-XII",
+            "participants": "3",
+            "description": "A classic online hackathon where plagiarism is scoffed at but StackOverflow is the way to go.",
+            "format": "",
+            "icon": "/assets/icons/hack.svg",
+            "color": "#2A3E98"
+        },
+        {
+            "name": "Designathon",
+            "eligibility": "IX-XII",
+            "participants": "3",
+            "description": "“Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs",
+            "format": "",
+            "icon": "/assets/icons/design.svg",
+            "color": "#006A4C"
+        },
+        {
+            "name": "Encryptid",
+            "eligibility": "Open",
+            "participants": "Open",
+            "description": "Google is your best friend; the mods are not.",
+            "format": "",
+            "icon": "/assets/icons/cryptic.svg",
+            "color": "#891145"
+        }
+    ],
+    [
+        {
+            "name": "Crossword",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "A tech-based crossword solely based on puns.",
+            "format": "",
+            "icon": "/assets/icons/cross.svg",
+            "color": "#5730BA"
+        },
+        {
+            "name": "Group Discussion",
+            "eligibility": "IX-XII",
+            "participants": "1",
+            "description": "An engaging panel discussion debating the rights and wrongs of the latest technology trends/issues.",
+            "format": "",
+            "icon": "/assets/icons/gd.svg",
+            "color": "#7C457C"
+        },
+        {
+            "name": "Surprise",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/surprise.svg",
+            "color": "#A89100"
+        }
+    ],
+    [
+        {
+            "name": "Hardware",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/hardware.svg",
+            "color": "#7542B1"
+        },
+        {
+            "name": "Hardware",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/hardware.svg",
+            "color": "#7542B1"
+        },
+        {
+            "name": "Hardware",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/hardware.svg",
+            "color": "#7542B1"
+        }
+    ],
+    [
+        {
+            "name": "Hardware",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/hardware.svg",
+            "color": "#7542B1"
+        }
+    ]
+]

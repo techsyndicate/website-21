@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="390" viewBox="0 0 390 390">
+  <defs>
+    <clipPath id="clip-Crossword_Icon">
+      <rect width="390" height="390"/>
+    </clipPath>
+  </defs>
+  <g id="Crossword_Icon" data-name="Crossword Icon" clip-path="url(#clip-Crossword_Icon)">
+    <rect width="390" height="390" fill="rgba(255,255,255,0)"/>
+    <g id="Group_86" data-name="Group 86" transform="matrix(0.985, -0.174, 0.174, 0.985, -421.886, 36.355)">
+      <g id="Group_13" data-name="Group 13" transform="translate(470.923 153.84)">
+        <g id="Path_14" data-name="Path 14" fill="none">
+          <path d="M8.368,0h202.92a8.368,8.368,0,0,1,8.368,8.368v202.92a8.368,8.368,0,0,1-8.368,8.368H8.368A8.368,8.368,0,0,1,0,211.288V8.368A8.368,8.368,0,0,1,8.368,0Z" stroke="none"/>
+          <path d="M 8.367828369140625 4.999984741210938 C 6.510787963867188 4.999984741210938 4.999984741210938 6.510818481445312 4.999984741210938 8.36785888671875 L 4.999984741210938 211.2879791259766 C 4.999984741210938 213.14501953125 6.510787963867188 214.6558227539062 8.367828369140625 214.6558227539062 L 211.2878875732422 214.6558227539062 C 213.1449279785156 214.6558227539062 214.6557312011719 213.14501953125 214.6557312011719 211.2879791259766 L 214.6557312011719 8.36785888671875 C 214.6557312011719 6.510818481445312 213.1449279785156 4.999984741210938 211.2878875732422 4.999984741210938 L 8.367828369140625 4.999984741210938 M 8.367828369140625 -1.52587890625e-05 L 211.2878875732422 -1.52587890625e-05 C 215.9093322753906 -1.52587890625e-05 219.6557312011719 3.746414184570312 219.6557312011719 8.36785888671875 L 219.6557312011719 211.2879791259766 C 219.6557312011719 215.909423828125 215.9093322753906 219.6558227539062 211.2878875732422 219.6558227539062 L 8.367828369140625 219.6558227539062 C 3.746429443359375 219.6558227539062 -1.52587890625e-05 215.909423828125 -1.52587890625e-05 211.2879791259766 L -1.52587890625e-05 8.36785888671875 C -1.52587890625e-05 3.746414184570312 3.746429443359375 -1.52587890625e-05 8.367828369140625 -1.52587890625e-05 Z" stroke="none" fill="#8251ff"/>
+        </g>
+        <rect id="Rectangle_101" data-name="Rectangle 101" width="5" height="32" transform="translate(0 129.656)" fill="#5730ba"/>
+        <line id="Line_19" data-name="Line 19" y1="33.471" transform="translate(2.49 128.656)" fill="none" stroke="#5730ba" stroke-width="5"/>
+        <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="2.408" cy="2.206" rx="2.408" ry="2.206" transform="translate(0 126.503)" fill="#8251ff"/>
+        <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="2.408" cy="2.206" rx="2.408" ry="2.206" transform="translate(0.1 159.823)" fill="#8251ff"/>
+      </g>
+      <g id="Rectangle_31" data-name="Rectangle 31" transform="translate(498.124 215.831)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="28.267" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="24.767" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_32" data-name="Rectangle 32" transform="translate(532.914 215.831)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_33" data-name="Rectangle 33" transform="translate(532.914 181.04)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_34" data-name="Rectangle 34" transform="translate(532.914 248.448)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(532.914 285.412)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="26.093" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="22.593" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(532.914 318.029)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_37" data-name="Rectangle 37" transform="translate(565.531 248.448)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="28.267" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="24.767" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(602.497 248.448)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(635.112 248.448)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="28.267" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="24.767" height="24.767" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_40" data-name="Rectangle 40" transform="translate(602.497 285.412)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="26.093" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="22.593" rx="1.25" fill="none"/>
+      </g>
+      <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(602.497 318.029)" fill="none" stroke="#8251ff" stroke-width="3.5">
+        <rect width="26.093" height="28.267" rx="3" stroke="none"/>
+        <rect x="1.75" y="1.75" width="22.593" height="24.767" rx="1.25" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

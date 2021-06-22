@@ -1,14 +1,14 @@
 <script>
 	import { Router, Route, Link } from "svelte-navigator";
 	import Navbar from './components/Navbar.svelte';
-	import Home from './components/Home.svelte';
-	import Events from './components/Events.svelte';
-	import Members from './components/Members.svelte';
-	import Alumni from './components/Alumni.svelte';
-	import Learn from './components/Learn.svelte';
-	import Register from './components/Register.svelte';
+	import Home from './pages/Home.svelte';
+	import Events from './pages/Events.svelte';
+	import Members from './pages/Members.svelte';
+	import Alumni from './pages/Alumni.svelte';
+	import Learn from './pages/Learn.svelte';
+	import Register from './pages/Register.svelte';
 	import Footer from './components/Footer.svelte';
-	import NotFound from './components/NotFound.svelte';
+	import NotFound from './pages/NotFound.svelte';
 </script>
 
 <Router>

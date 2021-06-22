@@ -1,7 +1,10 @@
-body {
-    background-color: rgb(2,2,2);
-    color: #FFFFFF;
+* {
     font-family: Inter;
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+    color: #FFFFFF;
     height: 100%;
     margin: 0;
     overflow-x: hidden;
