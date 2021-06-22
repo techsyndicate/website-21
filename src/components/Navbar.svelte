@@ -14,20 +14,20 @@
         left: 0;
         padding-left: 5vw;
         padding-right: 5vw;
-        padding-top: 3.5vh;
-        padding-bottom: 0.5vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         background-color: #030303;
         width: 90vw;
-        height: 3vw;
+        height: 5.5vh;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
     }
 
     nav img {
-        width: 4vw;
-        height: 4vw;
-        margin-top: -0.4vw;
+        width: 3vw;
+        height: 3vw;
+        margin-top: -0.5vh;
     }
 
     nav .right {
@@ -40,7 +40,7 @@
     }
 
     .nav-link {
-        font-size: 1.2vw;
+        font-size: 0.98vw;
         color: white;
         text-decoration: none;
         transition: all 0.3s;
@@ -74,7 +74,7 @@
         background-color: #00AF3B;
         color: white;
         border-radius: 5px;
-        font-size: 1.2vw;
+        font-size: 0.98vw;
         margin-left: 4vw;
         padding: 0.8vh 1.2vw;
         transition: all 0.2s;
