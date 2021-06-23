@@ -1,0 +1,25 @@
+<svg id="web" xmlns="http://www.w3.org/2000/svg" width="295" height="190" viewBox="0 0 295 190">
+  <g id="Rectangle_23" data-name="Rectangle 23" transform="translate(0 20.828)" fill="none" stroke="#fff" stroke-width="1" opacity="0.5">
+    <rect width="295" height="136" stroke="none"/>
+    <rect x="0.5" y="0.5" width="294" height="135" fill="none"/>
+  </g>
+  <g id="Group_10" data-name="Group 10" transform="translate(53.5)">
+    <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="#fff" stroke-width="1" opacity="0.5">
+      <circle cx="95" cy="95" r="95" stroke="none"/>
+      <circle cx="95" cy="95" r="94.5" fill="none"/>
+    </g>
+    <path id="Path_6" data-name="Path 6" d="M-.594-.067A95,95,0,0,0-14.219,17.362C-21.583,29.2-28.578,46.719-28.578,64.471a116.081,116.081,0,0,0,1.615,19.316,83.824,83.824,0,0,0,5,17.885A108.744,108.744,0,0,0,.083,134.783" transform="translate(29 28.016)" fill="none" stroke="#fff" stroke-width="1"/>
+  </g>
+  <g id="Rectangle_28" data-name="Rectangle 28" transform="translate(95 48.669)" fill="none" stroke="#5d7aff" stroke-width="2">
+    <rect width="107" height="72" rx="4" stroke="none"/>
+    <rect x="1" y="1" width="105" height="70" rx="3" fill="none"/>
+  </g>
+  <g id="Icon_feather-code" data-name="Icon feather-code" transform="translate(127.581 78.874)">
+    <path id="Path_10" data-name="Path 10" d="M24,26.592l10.619-8.8L24,9" transform="translate(7.427 -9)" fill="none" stroke="#5d7aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_11" data-name="Path 11" d="M13.619,9,3,17.8l10.619,8.8" transform="translate(-3 -9)" fill="none" stroke="#5d7aff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+  <line id="Line_17" data-name="Line 17" x1="10.933" y2="25.967" transform="translate(142.453 74.863)" fill="none" stroke="#5d7aff" stroke-linecap="round" stroke-width="2"/>
+  <line id="Line_18" data-name="Line 18" x2="105.513" transform="translate(95.848 60.34)" fill="none" stroke="#5d7aff" stroke-width="2"/>
+  <line id="Line_21" data-name="Line 21" y2="135" transform="translate(294.5 21.253)" fill="none" stroke="#fff" stroke-width="1"/>
+  <line id="Line_22" data-name="Line 22" x2="81" transform="translate(214 142.639)" fill="none" stroke="#fff" stroke-width="1"/>
+</svg>

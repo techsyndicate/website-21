@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="390" viewBox="0 0 390 390"><defs><clipPath id="clip-Cryptic_Hunt_Icon"><rect width="390" height="390"/></clipPath></defs><g id="Cryptic_Hunt_Icon" clip-path="url(#clip-Cryptic_Hunt_Icon)" data-name="Cryptic Hunt Icon"><rect width="390" height="390" fill="rgba(255,255,255,0)"/><g id="Group_68" data-name="Group 68" transform="translate(43.753 111.503) rotate(-17)"><g id="Group_14" data-name="Group 14" transform="translate(0 0)"><g id="Ellipse_9" fill="none" stroke="#ff2684" stroke-width="4" data-name="Ellipse 9" transform="translate(6.284 11.338)"><ellipse cx="113.272" cy="115.236" stroke="none" rx="113.272" ry="115.236"/><ellipse cx="113.272" cy="115.236" fill="none" rx="111.272" ry="113.236"/></g><ellipse id="Ellipse_10" cx="15.82" cy="15.829" fill="#ff2684" data-name="Ellipse 10" rx="15.82" ry="15.829" transform="translate(208.881 -0.102)"/><ellipse id="Ellipse_11" cx="3.797" cy="4.432" fill="#ff2684" data-name="Ellipse 11" rx="3.797" ry="4.432" transform="translate(198.75 6.235)"/><ellipse id="Ellipse_12" cx="6.961" cy="6.331" fill="#ff2684" data-name="Ellipse 12" rx="6.961" ry="6.331" transform="translate(226.601 39.169)"/><ellipse id="Ellipse_13" cx="13.922" cy="13.929" fill="#ff2684" data-name="Ellipse 13" rx="13.922" ry="13.929" transform="translate(-0.072 148.166)"/><ellipse id="Ellipse_14" cx="6.96" cy="8.232" fill="#ff2684" data-name="Ellipse 14" rx="6.96" ry="8.232" transform="translate(34.1 231.776)"/><ellipse id="Ellipse_15" cx="5.062" cy="6.966" fill="#ff2684" data-name="Ellipse 15" rx="5.062" ry="6.966" transform="translate(212.643 200.07)"/></g><g id="Icon_feather-lock" data-name="Icon feather-lock" transform="translate(78.014 70.763)"><path id="Path_27" fill="none" stroke="#ff2684" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9.223,0,73.811-.017c5.1,0,9.226,5.637,9.225,12.594L83.027,56.66c0,6.956-4.133,12.6-9.229,12.6L9.21,69.269c-5.1,0-9.226-5.637-9.225-12.594l.008-44.083C0,5.636,4.127,0,9.223,0Z" data-name="Path 27" transform="translate(-0.02 41.534)"/><path id="Path_28" fill="none" stroke="#ff2684" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M-.015,41.537l0-18.464a23.067,23.067,0,1,1,46.134-.009l0,18.464" data-name="Path 28" transform="translate(18.444 -0.009)"/></g></g></g></svg>
+<svg id="cryptic" xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 190 190">
+  <g id="Group_6" data-name="Group 6">
+    <g id="Rectangle_18" data-name="Rectangle 18" fill="none" stroke="#fff" stroke-width="1" opacity="0.5">
+      <rect width="157" height="157" stroke="none"/>
+      <rect x="0.5" y="0.5" width="156" height="156" fill="none"/>
+    </g>
+    <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(33 33)" fill="none" stroke="#fff" stroke-width="1" opacity="0.5">
+      <rect width="157" height="157" stroke="none"/>
+      <rect x="0.5" y="0.5" width="156" height="156" fill="none"/>
+    </g>
+    <g id="Rectangle_21" data-name="Rectangle 21" transform="translate(33 33)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="124" height="124" stroke="none"/>
+      <rect x="0.5" y="0.5" width="123" height="123" fill="none"/>
+    </g>
+  </g>
+  <g id="Group_14" data-name="Group 14" transform="translate(60 59)">
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(2 3)" fill="none" stroke="#ff2684" stroke-width="2">
+      <ellipse cx="33" cy="33.5" rx="33" ry="33.5" stroke="none"/>
+      <ellipse cx="33" cy="33.5" rx="32" ry="32.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="4.5" cy="4.5" r="4.5" transform="translate(61)" fill="#ff2684"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="1" cy="1" r="1" transform="translate(58 2)" fill="#ff2684"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(66 11)" fill="#ff2684"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="4" cy="4" r="4" transform="translate(0 43)" fill="#ff2684"/>
+    <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(10 67)" fill="#ff2684"/>
+    <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(62 58)" fill="#ff2684"/>
+  </g>
+  <g id="Icon_feather-lock" data-name="Icon feather-lock" transform="translate(78 76)">
+    <path id="Path_27" data-name="Path 27" d="M7.2,16.5H26.129c1.493,0,2.7,1.651,2.7,3.689V33.1c0,2.037-1.21,3.689-2.7,3.689H7.2c-1.493,0-2.7-1.651-2.7-3.689V20.189c0-2.037,1.21-3.689,2.7-3.689Z" transform="translate(0 -1.334)" fill="none" stroke="#ff2684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_28" data-name="Path 28" d="M10.5,15.166V9.759a6.759,6.759,0,0,1,13.518,0v5.407" transform="translate(-0.593 0)" fill="none" stroke="#ff2684" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -15,7 +15,7 @@
             "participants": "3",
             "description": "“Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs",
             "format": "",
-            "icon": "/assets/icons/design.svg",
+            "icon": "/assets/icons/designathon.svg",
             "color": "#006A4C"
         },
         {
@@ -24,7 +24,7 @@
             "participants": "Open",
             "description": "Google is your best friend; the mods are not.",
             "format": "",
-            "icon": "/assets/icons/cryptic.svg",
+            "icon": "/assets/icons/encryptid.svg",
             "color": "#891145"
         }
     ],
