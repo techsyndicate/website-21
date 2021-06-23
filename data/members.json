@@ -4,71 +4,45 @@
             "name": "Oorjit Chowdhary",
             "role": "President",
             "image": "https://github.com/oorjitchowdhary.png",
-            "website": "https://oorjit.co"
+            "socials": {
+                "github": "https://github.com/oorjitchowdhary",
+                "twitter": "https://twitter.com/oorjitchowdhary",
+                "facebook": "https://facebook.com/oorjit",
+                "globe": "https://oorjit.co"
+            }
         },
         {
             "name": "Mihir Aggarwal",
             "role": "Vice President",
             "image": "https://github.com/mihiraggarwal.png",
-            "website": "https://mihiraggarwal.co"
+            "socials": {
+                "instagram": "https://instagram.com/mihir_drumzz",
+                "github": "https://github.com/mihiraggarwal",
+                "medium": "https://medium.com/@mihiraggarwal",
+                "globe": "https://mihiraggarwal.co"
+            }
         },
         {
             "name": "Anshul Saha",
             "role": "Secretary",
             "image": "https://github.com/sheldor1510.png",
-            "website": "https://anshul.tk"
-        }
-    ],
-    [
+            "socials": {
+                "github": "https://github.com/sheldor1510",
+                "envelope": "mailto:mail@anshulsaha.me",
+                "linkedin": "https://linkedin.com/in/anshulsaha",
+                "globe": "https://anshulsaha.me"
+            }
+        },
         {
             "name": "Jai Madhukar",
             "role": "Joint Secretary",
-            "image": "https://github.com/Jai-17.png"
-        },
-        {
-            "name": "Vaibhav Sharma",
-            "role": "Core",
-            "image": "https://github.com/gigabite-pro.png"
-        },
-        {
-            "name": "Tanush Guha",
-            "role": "Member",
-            "image": "https://github.com/valkyrie-vulcan.png"
-        }
-    ],
-    [
-        {
-            "name": "Amogh Arya",
-            "role": "Member",
-            "image": "https://github.com/amogharya.png"
-        },
-        {
-            "name": "Nevis Kawatra",
-            "role": "Member",
-            "image": "https://github.com/NotNevisKawatra.png"
-        },
-        {
-            "name": "Gobind Anand",
-            "role": "Member",
-            "image": "https://github.com/GobindAnand.png"
-        }
-    ],
-    [
-        {
-            "name": "Aayush Garg",
-            "role": "Member",
-            "image": "https://media.discordapp.net/attachments/777573951413026826/777962350900412436/IMG_20201116_234743.jpg",
-            "website": "https://www.aayushgarg.net"
-        },
-        {
-            "name": "Shaurya Sisaudia",
-            "role": "Member",
-            "image": "https://media.discordapp.net/attachments/704990127998500894/772832066307227668/shr.png"
-        },
-        {
-            "name": "Omar Usmani",
-            "role": "Member",
-            "image": "https://github.com/Jazzuma.png"
+            "image": "https://github.com/Jai-17.png",
+            "socials": {
+                "github": "https://github.com/Jai-17",
+                "instagram": "https://instagram.com/ig_jai7",
+                "behance": "https://behance.net/jaimadhukar1",
+                "globe": "https://jai17.artstation.com"
+            }
         }
     ]
 ]

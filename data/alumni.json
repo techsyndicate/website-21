@@ -1,0 +1,129 @@
+[
+  {
+    "batch": "2020-21",
+    "alumni": [
+      [
+        {
+          "name": "Laxya Pahuja",
+          "image": "https://github.com/laxyapahuja.png",
+          "exrole": "President"
+        },
+        {
+          "name": "Ribhav Sharma",
+          "image": "https://github.com/ribhavsharma.png",
+          "exrole": "Secretary"
+        },
+        {
+          "name": "Chiranjiv Singh Malhi",
+          "image": "https://github.com/chiranjivmalhi.png",
+          "exrole": "Member"
+        },
+        {
+          "name": "Devjyoti Ghosh",
+          "image": "/assets/images/alumni/devjyotighosh.jpg",
+          "exrole": "Member"
+        }
+      ],
+      [
+        {
+          "name": "Pranav Uppal",
+          "image": "https://github.com/upspal.png",
+          "exrole": "Member"
+        }
+      ]
+    ]
+  },
+  {
+    "batch": "2019-20",
+    "alumni": [
+      [
+        {
+          "name": "Anurag Parida",
+          "image": "https://github.com/anuragparida.png",
+          "exrole": "President"
+        },
+        {
+          "name": "Sarthak Singhal",
+          "image": "/assets/images/alumni/sarthaksinghal.png",
+          "exrole": "Secretary"
+        },
+        {
+          "name": "Ansh Deo Singh",
+          "image": "/assets/images/alumni/anshdeosingh.jpg",
+          "exrole": "Member"
+        },
+        {
+          "name": "Priyanshu Bhandari",
+          "image": "/assets/images/alumni/priyanshubhandari.jpg",
+          "exrole": "Member"
+        }
+      ]
+    ]
+  },
+  {
+    "batch": "2018-19",
+    "alumni": [
+      [
+        {
+          "name": "Padam Chopra",
+          "image": "https://github.com/padamchopra.png",
+          "exrole": "President"
+        },
+        {
+          "name": "Aryaman Agrawal",
+          "image": "https://github.com/AryamanAgrawal.png",
+          "exrole": "Secretary"
+        },
+        {
+          "name": "Arnab Sagar",
+          "image": "https://github.com/ArnabSagar.png",
+          "exrole": "Member"
+        }
+      ]
+    ]
+  },
+  {
+    "batch": "2017-18",
+    "alumni": [
+      [
+        {
+          "name": "Ashwin Tewary",
+          "image": "https://github.com/ashwintewary.png",
+          "exrole": "President"
+        },
+        {
+          "name": "Gursimran Singh",
+          "image": "/assets/images/alumni/gursimransingh.jpg",
+          "exrole": "Secretary"
+        }
+      ]
+    ]
+  },
+  {
+    "batch": "2016-17",
+    "alumni": [
+      [
+        {
+          "name": "Satwik Dwivedi",
+          "image": "/assets/images/alumni/satwikdwivedi.jpg",
+          "exrole": "President"
+        },
+        {
+          "name": "Mudit Sharma",
+          "image": "/assets/images/alumni/muditsharma.jpg",
+          "exrole": "Member"
+        },
+        {
+          "name": "Shubh Jaroria",
+          "image": "/assets/images/alumni/shubhjaroria.jpg",
+          "exrole": "Member"
+        },
+        {
+          "name": "Shivam Garg",
+          "image": "/assets/images/alumni/shivamgarg.jpg",
+          "exrole": "Member"
+        }
+      ]
+    ]
+  }
+]

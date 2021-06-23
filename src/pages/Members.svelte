@@ -12,21 +12,21 @@
     />
     <div style="height: 3vh" />
     <SearchBar />
-    <div style="height: 10vh" />
+    <div style="height: 4vh" />
   
-    <!-- {#each members as rows}
+    {#each members as rows}
       <div style="display: flex; justify-content: space-between;">
         {#each rows as member}
           <MemberCard
             member={member.name}
             role={member.role}
             image={member.image}
-            website={member.website}
+            socials={member.socials}
           />
         {/each}
       </div>
-      <div style="height: 8vh" />
-    {/each} -->
+      <div style="height: 4vh" />
+    {/each}
   
     <div style="height: 10vh" />
   </body>
