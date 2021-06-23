@@ -1,8 +1,8 @@
 <script>
-    export let field, url, icon;
+    export let field, slug, icon;
 </script>
 
-<a href={url}><div class="resource">
+<a href={slug} target="_blank"><div class="resource">
   <img src={icon} alt={field} />
   <h4>{field}</h4>
 </div></a>

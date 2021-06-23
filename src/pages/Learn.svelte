@@ -18,7 +18,7 @@
         <ResourceCard
           field={resource.name}
           icon={resource.icon}
-          url={resource.url}
+          slug={resource.slug}
         />
       {/each}
     </div>

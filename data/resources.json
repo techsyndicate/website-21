@@ -2,51 +2,51 @@
     [
         {
             "name": "App Development",
-            "url": "https://techsyndicate.club/resources/dev/app",
+            "slug": "/resources/dev/app",
             "icon": "/assets/icons/appd.svg"
         },
         {
             "name": "Web Development",
-            "url": "https://techsyndicate.club/resources/dev/web",
+            "slug": "/resources/dev/web",
             "icon": "/assets/icons/webd.svg"
         },
         {
             "name": "Cryptic Hunts",
-            "url": "https://techsyndicate.club/resources/cryptic",
+            "slug": "/resources/cryptic",
             "icon": "/assets/icons/cryptic.svg"
         }
     ],
     [
         {
             "name": "2D Design",
-            "url": "https://techsyndicate.club/resources/design/2d",
+            "slug": "/resources/design/2d",
             "icon": "/assets/icons/designlr.svg"
         },
         {
             "name": "3D Design",
-            "url": "https://techsyndicate.club/resources/design/3d",
+            "slug": "/resources/design/3d",
             "icon": "/assets/icons/3d.svg"
         },
         {
             "name": "A/V Editing",
-            "url": "https://techsyndicate.club/resources/av",
+            "slug": "/resources/av",
             "icon": "/assets/icons/av.svg"
         }
     ],
     [
         {
             "name": "Group Discussion",
-            "url": "https://techsyndicate.club/resources/gd",
+            "slug": "/resources/gd",
             "icon": "/assets/icons/gd.svg"
         },
         {
             "name": "Crossword",
-            "url": "https://techsyndicate.club/resources/cross",
+            "slug": "/resources/cross",
             "icon": "/assets/icons/cross.svg"
         },
         {
             "name": "Quiz",
-            "url": "https://techsyndicate.club/resources/quiz",
+            "slug": "/resources/quiz",
             "icon": "/assets/icons/quiz.svg"
         }
     ]
