@@ -10,7 +10,7 @@
 
     p {
         color: #f3f3f3;
-        margin-right: 20vw;
+        margin-right: 15vw;
         font-size: 1.2vw;
     }
 </style>

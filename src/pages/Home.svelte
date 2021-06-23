@@ -1,11 +1,16 @@
 <script>
     import { Link } from 'svelte-navigator';
+    import BigPicture from 'bigpicture';
+    window.onload = () => {
+        document.getElementById('play').onclick = (e) => {
+            BigPicture({
+                el: e.target,
+                ytSrc: 'erE1Nf2hCmk',
+                dimensions: [1500, 800]
+            })
+        }
+    }
 </script>
-
-<header>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-</header>
 
 <style>
     .first-section {
@@ -115,6 +120,10 @@
         text-decoration: none;
     }
 
+    .video-play-button:hover {
+        cursor: pointer;
+    }
+
     .second-section .left h1 {
         font-size: 2.5vw;
     }
@@ -187,7 +196,7 @@
             <p>26th July - 6th August </p>
             <div class="buttons">
                 <Link to='/register' style="text-decoration: none;"><span class="nav-link-button">Register</span></Link>
-                <a class="video-play-button" data-fancybox href="https://www.youtube.com/watch?v=oEr_jwRZ07A&feature=youtu.be">
+                <a class="video-play-button" id="play">
                     <span class="watch">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24.534" height="24.534" viewBox="0 0 29.534 29.534" style="margin-right: 0.5vw;">
                             <path id="Icon_material-play-circle-outline" data-name="Icon material-play-circle-outline" d="M14.814,24.412l8.86-6.645-8.86-6.645ZM17.767,3A14.767,14.767,0,1,0,32.534,17.767,14.773,14.773,0,0,0,17.767,3Zm0,26.581A11.814,11.814,0,1,1,29.581,17.767,11.829,11.829,0,0,1,17.767,29.581Z" transform="translate(-3 -3)" fill="#00af3b"/>
