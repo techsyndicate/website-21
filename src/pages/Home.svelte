@@ -6,7 +6,7 @@
             BigPicture({
                 el: e.target,
                 ytSrc: 'erE1Nf2hCmk',
-                dimensions: [1500, 800]
+                dimensions: [960, 540]
             })
         }
     }
