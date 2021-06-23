@@ -18,8 +18,8 @@
 
     .first-section img {
         height: auto;
-        width: 90vw;
-        margin-left: 15vw;
+        width: 100vw;
+        margin-left: 5vw;
         margin-top: -25vh;
         opacity: 0.72;
     }

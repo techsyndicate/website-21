@@ -1,17 +1,21 @@
-<style>
-    .learn {
-        height: 50vh;
-        width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        background-color: aqua;
-        margin-top: 9.5vh;
-    }
-</style>
-
-<body>
-    <div class="learn">
-        <h1>Learn</h1>
-    </div>
+<script>
+    import Jumbotron from "../components/Jumbotron.svelte";
+    import EventCard from "../components/EventCard.svelte";
+  
+    import events from "../../data/events.json";
+  </script>
+  
+  <body>
+    <Jumbotron
+      title="Learn"
+      description="The learning resources have been compiled by the members of Tech Syndicate themselves and provide a strong understanding about the respective fields and about the skills required to excel in those fields."
+    />
+    <div style="height: 5vh" />
+    <div style="height: 10vh" />
 </body>
+
+<style>
+  body {
+    padding: 0 18%;
+  }
+</style>

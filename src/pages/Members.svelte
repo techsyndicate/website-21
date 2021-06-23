@@ -14,7 +14,7 @@
     <SearchBar />
     <div style="height: 10vh" />
   
-    {#each members as rows}
+    <!-- {#each members as rows}
       <div style="display: flex; justify-content: space-between;">
         {#each rows as member}
           <MemberCard
@@ -26,7 +26,7 @@
         {/each}
       </div>
       <div style="height: 8vh" />
-    {/each}
+    {/each} -->
   
     <div style="height: 10vh" />
   </body>

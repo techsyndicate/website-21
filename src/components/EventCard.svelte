@@ -28,7 +28,8 @@
     .bottom-items {
         display: flex;
         justify-content: space-between;
-        min-height: 2vh;
+        height: 20vh;
+        /* background-color: antiquewhite; */
     }
 
     button {
@@ -43,7 +44,7 @@
     img {
         width: 32vw;
         height: 32vh;
-        margin-bottom: -4vh;
+        margin-top: -5vh;
     }
 
     p {
@@ -62,6 +63,6 @@
     }
 
     .bottom-items img {
-      margin-left: 7.5vw;
+      margin-left: 45%;
     }
 </style>
