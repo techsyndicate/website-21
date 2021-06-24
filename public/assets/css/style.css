@@ -23,3 +23,8 @@ main {
 #bp_container {
     background: rgb(2, 2, 2, .97) !important;
 }
+
+.anchor {
+    border: none !important;
+    outline: none;
+}

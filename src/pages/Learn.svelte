@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Learn</title>
+</svelte:head>
+
 <script>
   import Jumbotron from "../components/Jumbotron.svelte";
   import ResourceCard from "../components/ResourceCard.svelte";

@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Home</title>
+</svelte:head>
+
 <script>
   import BigPicture from "bigpicture";
   window.addEventListener('click', (e) => {

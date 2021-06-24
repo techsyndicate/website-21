@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Alumni</title>
+</svelte:head>
+
 <script>
   import Jumbotron from "../components/Jumbotron.svelte";
   import MemberCard from "../components/MemberCard.svelte";
@@ -68,7 +72,7 @@
 <body>
   <Jumbotron
     title="Alumni"
-    description="Tech Syndicate has a vast and diverse alumni network mapped all over the globe that has been a mentor for the club's members and have shaped the club into what it is today."
+    description="Tech Syndicate has a vast and diverse alumni network mapped all over the globe that has been a mentor for the club's members and shaped it into what it is today."
   />
   <div style="height: 3vh" />
   <SearchBar on:message={handleMessage} />

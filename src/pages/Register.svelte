@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Register</title>
+</svelte:head>
+
 <script>
     import Jumbotron from "../components/Jumbotron.svelte";
     import SchoolForm from "../components/SchoolForm.svelte";
@@ -15,7 +19,7 @@
 <body>
   <Jumbotron
     title="Register"
-    description="You can register with your school or as an independent team. Independent teams will not be eligible for the overall trophy. The deadline to register is July 11, 2021."
+    description="You can register with your school or as an independent team. Independent teams will not be eligible for the overall trophy. The deadline to register is July 12, 2021."
   />
   <div style="margin-top: 5vh"></div>
   <div class="first-section">
@@ -42,7 +46,7 @@
     </div>
     {#if optionSelected === 1}
       <SchoolForm/>
-    {:else}       
+    {:else}
       <IndiForm/>
     {/if}
   </div>
@@ -97,20 +101,14 @@
     height: 2.2vw;
     text-align: center;
     border-radius: 3px;
-    /* border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px; */
   }
 
   .option2 {
     width: 20.4vw;
     border: 0.01vw white solid;
-    /* background-color: thistle; */
     height: 2.2vw;
     text-align: center;
     border-radius: 3px;
-    /* border-left-width: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px; */
     margin-left: 2vw;
   }
 

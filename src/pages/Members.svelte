@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Members</title>
+</svelte:head>
+
 <script>
     import Jumbotron from "../components/Jumbotron.svelte";
     import MemberCard from "../components/MemberCard.svelte";

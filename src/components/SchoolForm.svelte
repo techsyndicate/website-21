@@ -1,4 +1,8 @@
 <script>
+    import { onMount, onDestroy } from 'svelte';
+    import { notyf } from './notyf';
+    import Captcha from "./Captcha.svelte";
+
     let maxParticipants = {
         Hackathon: 3,
         Designathon: 3,
@@ -35,7 +39,21 @@
       checkedEvents = checkedEvents 
     }
 
-    const submitSchoolForm = (type) => {
+    let captchaStatus = false;
+    const validateCaptcha = async (captchaToken) => {
+      const response = await (await fetch("https://ts-reg-21.herokuapp.com/captcha", {
+        method: "POST",
+        body: JSON.stringify({
+          hcaptchaToken: captchaToken,
+          hcaptchaSecret: hcaptcha.secret
+        }),
+        headers: { 'Content-Type': 'application/json' }
+      })).json();
+
+      captchaStatus = response.success;
+    }
+
+    const submitSchoolForm = async () => {
       let formData = {}
       formData["events"] = checkedEvents
       let errors = []
@@ -47,7 +65,7 @@
           f.split('-').forEach(e => {
             eventFullName += `${e[0].toUpperCase()}${e.slice(1, e.length)} `
           })
-          errors.push(`Please fill in ${eventFullName}`)
+          errors.push(`Please fill in ${eventFullName.toLowerCase().trim()}.`)
         }
       })
       if(errors.length === 0) {
@@ -75,38 +93,52 @@
                 participant[detailName] = 'undefined'
               }
             })
-            formData[fieldName] =  participant
+            formData[fieldName] = participant
           } 
         })
-        // TODO: api post request
-        console.log(formData)
+
+        if (!captchaStatus) {
+          return notyf.error("CAPTCHA verification failed. Please try again.");
+        }
+
         fetch('https://ts-reg-21.herokuapp.com/school', {
-            // Adding method type
             method: "POST",
-
-            // Adding body or contents to send
             body: JSON.stringify(formData),
-
-            // Adding headers to the request
             headers: {
               "Content-type": "application/json; charset=UTF-8",
             }
           }
         ).then(async(response) => {
             const resp = await response.json()
-            console.log(resp)
+            notyf.success(resp);
+            setTimeout(() => {
+              window.location.reload();
+            }, 1000);
           })
-          .catch(err => {console.log(err)})
+          .catch(err => {
+            notyf.error(err);
+          });
       } else {
-        console.log("ERRORS")
-        errors.forEach(err => console.log(err))
+        errors.forEach(err => {
+          notyf.error(err);
+        });
       }
     }
 
+    onMount(() => {
+      window.validateCaptcha = validateCaptcha;
+    });
+
+    onDestroy(() => {
+      window.validateCaptcha = null;
+    });
+
+
     window.addEventListener('click', (e) => {
-        if(e.target.id === "school-submit-button") {
-          submitSchoolForm('school')
-        } else if(e.target.checked === false) {
+          if (e.target.id === "school-submit-button") {
+            submitSchoolForm();
+          }
+          else if(e.target.checked === false) {
             if(checkedEvents.includes(e.target.value)) {
               removeEvent(e.target.value)
             } 
@@ -189,6 +221,8 @@
         </div>
     {/each}
 {/each}
+
+<Captcha siteKey={hcaptcha.siteKey}/>
 
 {#if checkedEvents.length > 0}
   <button id="school-submit-button">Register</button>

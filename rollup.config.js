@@ -5,8 +5,15 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import json from '@rollup/plugin-json';
+import replace from '@rollup/plugin-replace';
+import * as dotenv from 'dotenv';
 
 const production = !process.env.ROLLUP_WATCH;
+
+// env vars
+dotenv.config();
+const hcaptchaSiteKey = process.env.HCAPTCHA_SITE_KEY;
+const hcaptchaSecret = process.env.HCAPTCHA_SECRET;
 
 function serve() {
 	let server;
@@ -62,6 +69,14 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+
+		// pass down env vars
+		replace({
+			hcaptcha: JSON.stringify({
+				secret: hcaptchaSecret,
+				siteKey: hcaptchaSiteKey
+			})
+		}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

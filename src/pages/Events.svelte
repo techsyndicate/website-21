@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>TS | Events</title>
+</svelte:head>
+
 <script>
   import Jumbotron from "../components/Jumbotron.svelte";
   import EventCard from "../components/EventCard.svelte";
@@ -14,7 +18,7 @@
   <div style="height: 5vh" />
 
   {#each events as rows}
-    <div style="display: flex; justify-content: space-between;">
+    <div style="display: flex; justify-content: left">
       {#each rows as event}
         <EventCard
           event={event.name}
@@ -28,7 +32,7 @@
         />
       {/each}
     </div>
-    <div style="height: 8vh" />
+    <div style="height: 6vh" />
   {/each}
 
   <div style="height: 10vh" />

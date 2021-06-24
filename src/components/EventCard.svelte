@@ -23,6 +23,7 @@
         z-index: 2;
         overflow: hidden;
         position: relative;
+        margin-right: 2vw;
     }
 
     .bottom-items {
