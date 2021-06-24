@@ -15,3 +15,11 @@ main {
     min-height: 100%;
     margin-bottom: -50px;
 }
+
+#bp_sv, #bp_container, iframe {
+    border-radius: 10px;
+}
+
+#bp_container {
+    background: rgb(2, 2, 2, .97) !important;
+}
