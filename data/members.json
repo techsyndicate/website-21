@@ -6,9 +6,9 @@
             "image": "https://github.com/oorjitchowdhary.png",
             "socials": {
                 "github": "https://github.com/oorjitchowdhary",
-                "twitter": "https://twitter.com/oorjitchowdhary",
-                "facebook": "https://facebook.com/oorjit",
-                "globe": "https://oorjit.co"
+                "facebook": "https://facebook.com/oorjitchowdhary",
+                "globe": "https://oorjit.co/",
+                "twitter": "https://twitter.com/oorjitchowdhary"
             }
         },
         {
@@ -16,10 +16,10 @@
             "role": "Vice President",
             "image": "https://github.com/mihiraggarwal.png",
             "socials": {
-                "instagram": "https://instagram.com/mihir_drumzz",
                 "github": "https://github.com/mihiraggarwal",
-                "medium": "https://medium.com/@mihiraggarwal",
-                "globe": "https://mihiraggarwal.co"
+                "globe": "https://mihiraggarwal.us/",
+                "instagram": "https://instagram.com/mihir_drumzz",
+                "medium": "https://medium.com/@mihiraggarwal"
             }
         },
         {
@@ -27,22 +27,230 @@
             "role": "Secretary",
             "image": "https://github.com/sheldor1510.png",
             "socials": {
-                "github": "https://github.com/sheldor1510",
                 "envelope": "mailto:mail@anshulsaha.me",
-                "linkedin": "https://linkedin.com/in/anshulsaha",
-                "globe": "https://anshulsaha.me"
+                "github": "https://github.com/sheldor1510",
+                "globe": "https://anshulsaha.me",
+                "linkedin": "https://in.linkedin.com/in/anshulsaha"
             }
         },
         {
             "name": "Jai Madhukar",
             "role": "Joint Secretary",
-            "image": "https://github.com/Jai-17.png",
+            "image": "https://github.com/jai-17.png",
             "socials": {
                 "github": "https://github.com/Jai-17",
+                "globe": "https://jai17.artstation.com",
                 "instagram": "https://instagram.com/ig_jai7",
-                "behance": "https://behance.net/jaimadhukar1",
-                "globe": "https://jai17.artstation.com"
+                "behance": "https://behance.net/jaimadhukar1"
             }
+        }
+    ],
+    [
+        {
+            "name": "Vaibhav Sharma",
+            "role": "Core",
+            "image": "https://github.com/gigabite-pro.png",
+            "socials": {
+                "github": "https://github.com/gigabite-pro",
+                "globe": "https://nibble.ga/4qukzfuN9",
+                "linkedin": "https://in.linkedin.com/in/vaibhavsharma190317",
+                "instagram": "https://instagram.com/_.chintuuu._"
+            }
+        },
+        {
+            "name": "Amish Mamtani",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/845302720121929768/856777621269250048/IMG_20210621_224815.jpg",
+            "socials": {
+                "envelope": "mailto:amishmamtani@gmail.com",
+                "instagram": "https://instagram.com/amishmamtani_",
+                "behance": "https://behance.net/amishmamtani"
+            }
+        },
+        {
+            "name": "Nevis Kawatra",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:neviskawatra05@gmail.com",
+                "twitter": "https://twitter.com/notneviskawatra",
+                "instagram": "https://instagram.com/notneviskawatra"
+            }
+        },
+        {
+            "name": "Utkarsh Dugar",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:zaput04@gmail.com",
+                "behance": "https://behance.net/zaput"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Tanush Guha",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:tanush.guha@gmail.com\n",
+                "linkedin": "https://in.linkedin.com/in/tanush-guha-5942a9203",
+                "twitter": "https://twitter.com/tgx420",
+                "instagram": "https://instagram.com/tanush.03"
+            }
+        },
+        {
+            "name": "Shaurya Sisaudia",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:shaurya.sisaudia@gmail.com",
+                "github": "https://github.com/shauryasisaudia\n"
+            }
+        },
+        {
+            "name": "Amogh Arya",
+            "role": "Member",
+            "image": "http://github.com/amogharya.png",
+            "socials": {
+                "envelope": "mailto:amogharya05@gmail.com",
+                "github": "https://github.com/amogharya",
+                "linkedin": "https://in.linkedin.com/in/amogharya",
+                "instagram": "https://instagram.com/amoghharya"
+            }
+        },
+        {
+            "name": "Aayush Garg",
+            "role": "Member",
+            "image": "https://github.com/gamer-12748.png",
+            "socials": {
+                "envelope": "mailto:contact@aayushgarg.net",
+                "github": "https://github.com/gamer-12748",
+                "globe": "https://aayushgarg.net",
+                "linkedin": "https://in.linkedin.com/in/aayush-garg-585b6718b"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Anirudh Chaturvedi",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857496917131264000/IMG-20201207-WA0029_edited.jpg",
+            "socials": {
+                "envelope": "mailto:tech.graph07@gmail.com",
+                "linkedin": "https://in.linkedin.com/in/AnirudhChaturvedi07",
+                "twitter": "https://twitter.com/graphtech_07"
+            }
+        },
+        {
+            "name": "Yash Madaan",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497034957652008/IMG-0212.jpg",
+            "socials": {
+                "envelope": "mailto:thegodofgreatness343@gmail.com",
+                "github": "https://github.com/AlightKnight343",
+                "instagram": "https://instagram.com/YashMadaan420"
+            }
+        },
+        {
+            "name": "Aayan Agarwal",
+            "role": "Member",
+            "image": "https://github.com/ion05.png",
+            "socials": {
+                "envelope": "mailto:aayanagarwal05@gmail.com",
+                "github": "https://github.com/ion05",
+                "twitter": "https://twitter.com/14coderz",
+                "instagram": "https://instagram.com/aayan_14.05"
+            }
+        },
+        {
+            "name": "Yuvraaj Narula",
+            "role": "Member",
+            "image": "https://github.com/yuvraajnarula.png",
+            "socials": {
+                "envelope": "mailto:ynarula678@gmail.com",
+                "github": "https://github.com/yuvraajnarula",
+                "instagram": "https://instagram.com/yuvraaj.30"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Pulkit Handa",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:pulkit.handa2005@gmail.com",
+                "github": "https://github.com/Pulkitchamp",
+                "globe": "https://pulkithanda.me",
+                "instagram": "https://instagram.com/itzz_pulkit.05"
+            }
+        },
+        {
+            "name": "Khanak Aggarwal",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497320030339092/Screenshot_20210622-121215_Gallery2.jpg",
+            "socials": {
+                "envelope": "mailto:khanakaggarwal15@gmail.com",
+                "github": "https://github.com/Khanak15",
+                "linkedin": "https://in.linkedin.com/in/Khanak Aggarwal"
+            }
+        },
+        {
+            "name": "Amogh Agrawal",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497472548732959/WhatsApp_Image_2021-06-21_at_10.59.44_PM.jpeg",
+            "socials": {
+                "envelope": "mailto:amogh.ggn@gmail.com",
+                "github": "https://github.com/AmoghAgrawal",
+                "twitter": "https://twitter.com/AmoghAgrawal7"
+            }
+        },
+        {
+            "name": "Gobind Anand",
+            "role": "Member",
+            "image": "https://github.com/GobindAnand.png",
+            "socials": {
+                "envelope": "mailto:gobind13.anand@gmail.com",
+                "github": "https://github.com/GobindAnand",
+                "linkedin": "https://in.linkedin.com/in/Gobind Anand",
+                "instagram": "https://instagram.com/gobind.singh.anand"
+            }
+        }
+    ],
+    [
+        {
+            "name": "Simadhri Mohith",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {
+                "envelope": "mailto:mohithsimhadri@gmail.com",
+                "instagram": "https://instagram.com/_._mohithrocks"
+            }
+        },
+        {
+            "name": "Bhavya Batra",
+            "role": "Member",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497627159822346/8f7aadc4-bb55-40d9-82f4-fc4cf98b2443.png",
+            "socials": {
+                "envelope": "mailto:bhavya.batra06@gmail.com",
+                "linkedin": "https://in.linkedin.com/in/BhavyaBatra06"
+            }
+        },
+        {
+            "name": "Nishant Navani",
+            "role": "Member",
+            "image": "https://github.com/nishantnavani.png",
+            "socials": {
+                "envelope": "mailto:nishant.navani@gmail.com",
+                "github": "https://github.com/nishantnavani"
+            }
+        },
+        {
+            "name": "Chahat Arora",
+            "role": "Member",
+            "image": "https://github.com/oorjitchowdhary.png",
+            "socials": {}
         }
     ]
 ]
