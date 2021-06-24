@@ -1,15 +1,14 @@
 <script>
-  import { Link } from "svelte-navigator";
   import BigPicture from "bigpicture";
-  window.onload = () => {
-    document.getElementById("play").onclick = (e) => {
+  window.addEventListener('click', (e) => {
+    if(e.target.id === "watch-icon" || e.target.id === "watch-text") {
       BigPicture({
         el: e.target,
         ytSrc: "erE1Nf2hCmk",
         dimensions: [960, 540],
       });
-    };
-  };
+    }
+  })
 </script>
 
 <body>
@@ -21,17 +20,18 @@
       <h1>ROBOTRONICS '21</h1>
       <p>26th July - 6th August</p>
       <div class="buttons">
-        <a href="https://discord.com/new" style="text-decoration: none;"
+        <a href="/server" style="text-decoration: none;" target="_blank"
           ><span class="nav-link-button">Discord</span></a
         >
         <a class="video-play-button" id="play">
-          <span class="watch">
+          <span class="watch" id="watch-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24.534"
               height="24.534"
               viewBox="0 0 29.534 29.534"
               style="margin-right: 0.5vw;"
+              id="watch-icon"
             >
               <path
                 id="Icon_material-play-circle-outline"

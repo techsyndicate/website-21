@@ -1,5 +1,5 @@
 <script>
-  export let event, description, eligibility, participants, format, icon, color;
+  export let event, description, eligibility, participants, format, icon, color, buttonText;
 </script>
 
 <div class="card" style="background: {color};">
@@ -9,7 +9,7 @@
   <p>{description}</p>
 
   <div class="bottom-items">
-    <a href={format}><button type="button" class="card-button" style="color: {color};">Prelims&nbsp;&gt;</button></a>
+    <a href="{format}" target="_blank"><button type="button" class="card-button" style="color: {color};">{buttonText}&nbsp;&gt;</button></a>
     <img src={icon} alt="code"/>
   </div>
 </div>
@@ -39,6 +39,10 @@
         background: #fff;
         font-weight: 600;
         margin-top: 100%;
+    }
+
+    button:hover {
+      cursor: pointer;
     }
 
     img {

@@ -7,7 +7,8 @@
             "description": "A classic online hackathon where plagiarism is scoffed at but StackOverflow is the way to go.",
             "format": "",
             "icon": "/assets/icons/hack.svg",
-            "color": "#2A3E98"
+            "color": "#2A3E98",
+            "buttonText": "Prelims"
         },
         {
             "name": "Designathon",
@@ -16,7 +17,8 @@
             "description": "“Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs",
             "format": "",
             "icon": "/assets/icons/designathon.svg",
-            "color": "#006A4C"
+            "color": "#006A4C",
+            "buttonText": "Prelims"
         },
         {
             "name": "Encryptid",
@@ -25,7 +27,8 @@
             "description": "Google is your best friend; the mods are not.",
             "format": "",
             "icon": "/assets/icons/encryptid.svg",
-            "color": "#891145"
+            "color": "#891145",
+            "buttonText": "Format"
         }
     ],
     [
@@ -36,7 +39,8 @@
             "description": "A tech-based crossword solely based on puns.",
             "format": "",
             "icon": "/assets/icons/cross.svg",
-            "color": "#5730BA"
+            "color": "#5730BA",
+            "buttonText": "Prelims"
         },
         {
             "name": "Group Discussion",
@@ -45,7 +49,8 @@
             "description": "An engaging panel discussion debating the rights and wrongs of the latest technology trends/issues.",
             "format": "",
             "icon": "/assets/icons/gd.svg",
-            "color": "#7C457C"
+            "color": "#7C457C",
+            "buttonText": "Prelims"
         },
         {
             "name": "Surprise",
@@ -54,7 +59,8 @@
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "",
             "icon": "/assets/icons/surprise.svg",
-            "color": "#A89100"
+            "color": "#A89100",
+            "buttonText": "Prelims"
         }
     ],
     [
@@ -65,36 +71,50 @@
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "",
             "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1"
+            "color": "#7542B1",
+            "buttonText": "Prelims"
         },
         {
-            "name": "Hardware",
+            "name": "Jr. Robotics",
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "",
             "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1"
+            "color": "#7542B1",
+            "buttonText": "Prelims"
         },
         {
-            "name": "Hardware",
+            "name": "Minecraft",
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "",
             "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1"
+            "color": "#7542B1",
+            "buttonText": "Prelims"
         }
     ],
     [
         {
-            "name": "Hardware",
+            "name": "Adobe Spark",
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "",
             "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1"
+            "color": "#7542B1",
+            "buttonText": "Prelims"
+        },
+        {
+            "name": "Paint 3D",
+            "eligibility": "IX-XII",
+            "participants": "2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "format": "",
+            "icon": "/assets/icons/hardware.svg",
+            "color": "#7542B1",
+            "buttonText": "Prelims"
         }
     ]
 ]

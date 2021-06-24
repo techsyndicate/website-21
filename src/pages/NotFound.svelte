@@ -1,13 +1,13 @@
 <style>
     .error-div {
-        height: 57vh;
+        height: 58vh;
         width: 100vw;
         text-align: center;
+        padding-top: 20vh;
     }
     
     h1 {
         font-size: 4vw;
-        margin-top: 30vh;
     }
 </style>
 

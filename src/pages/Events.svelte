@@ -8,7 +8,7 @@
 <body>
   <Jumbotron
     title="Events"
-    description="Robotronics 2021 comprises of 10 events, spanned across grades 3-12. There will be one overall prize, competing for which will require proficiency across a wide variety of fields."
+    description="Robotronics 2021 comprises of 11 events, spanned across grades 3-12. There will be one overall prize, competing for which will require proficiency across a wide variety of fields."
   />
 
   <div style="height: 5vh" />
@@ -24,6 +24,7 @@
           icon={event.icon}
           color={event.color}
           format={event.format}
+          buttonText={event.buttonText}
         />
       {/each}
     </div>
