@@ -17,7 +17,7 @@
   </header>
   <main>
     <Route path="/">
-      <Alumni />
+      <Home />
     </Route>
     <Route path="events">
       <Events />

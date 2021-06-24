@@ -34,7 +34,7 @@
     font-weight: 300;
   }
 
-  @keyframes title {
+  @keyframes titleHoverOn {
     from {
       opacity: 0;
       transform: translateY(100%);
@@ -45,7 +45,7 @@
     }
   }
 
-  @keyframes icon {
+  @keyframes iconHoverOn {
       from {
           transform: translateY(0%);
       }
@@ -55,19 +55,52 @@
       }
   }
 
+  @keyframes titleHoverOff {
+    from {
+      transform: translateY(0%);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes iconHoverOff {
+    from {
+      transform: translateY(-10%);
+    }
+
+    to {
+      transform: translateY(0%);
+    }
+  }
+
   .resource:hover {
       cursor: pointer;
   }
 
   .resource:hover h4 {
-    animation-name: title;
+    animation-name: titleHoverOn;
     animation-duration: 500ms;
     animation-fill-mode: both;
   }
 
   .resource:hover img {
-      animation-name: icon;
+      animation-name: iconHoverOn;
       animation-duration: 500ms;
       animation-fill-mode: both;
+  }
+
+  .resource h4 {
+    animation-name: titleHoverOff;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
+
+  .resource img {
+    animation-name: iconHoverOff;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
   }
 </style>
