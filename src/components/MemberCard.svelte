@@ -12,7 +12,7 @@
   {#if socials}
     <div class="socials">
       {#each Object.entries(socials) as [social, link]}
-        <a href={link} alt={social}
+        <a href={link} alt={social} target="_blank"
           ><i class="{social === 'medium' ? 'fab' : 'fa'} fa-{social}" /></a
         >
       {/each}

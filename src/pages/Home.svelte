@@ -107,6 +107,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    background-color: #010101;
   }
 
   .first-section img {
