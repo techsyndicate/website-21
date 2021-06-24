@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: max-content;
     margin-left: 1vw;
     margin-right: 7vw;
     color: rgba(102, 102, 102, 0.904);
@@ -68,6 +69,7 @@
   a {
     text-decoration: none;
     color: rgba(102, 102, 102, 0.904);
+    margin-right: 0.5vw;
   }
 
   .socials a:hover {
