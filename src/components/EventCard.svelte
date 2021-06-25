@@ -30,7 +30,6 @@
         display: flex;
         justify-content: space-between;
         height: 20vh;
-        /* background-color: antiquewhite; */
     }
 
     button {
@@ -69,5 +68,40 @@
 
     .bottom-items img {
       margin-left: 45%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+        margin: 0;
+        max-width: 64vw;
+        padding: 4vh 6vw;
+        margin-bottom: 4vh;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      .bottom-items {
+        padding-bottom: 1vh;
+      }
+
+      button {
+        padding: 1vh 2vw;
+      }
+
+      .card-button {
+        font-size: 2vh;
+        margin-bottom: 3vh;
+      }
+
+      img {
+        width: 54vw;
+        height: 54vh;
+        margin-top: -12vh;
+        margin-right: -18vw;
+        margin-bottom: 4vh;
+      }
     }
 </style>

@@ -82,7 +82,7 @@
     {#if batch.alumni[0].length !== 0}
       <h2>{batch.batch}</h2>
       {#each batch.alumni as row}
-        <div style="display: flex; justify-content: space-between; max-width: max-content;">
+        <div class="container">
           {#each row as alum}
             <MemberCard
               member={alum.name}
@@ -91,16 +91,48 @@
             />
           {/each}
         </div>
-        <div style="height: 4vh;" />
+        <div class="sized-box" />
       {/each}
+      <div class="batch-sized-box" />
     {/if}
   {/each}
-
-  <div style="height: 39vh" />
+  <div style="height: 6vh;"/>
 </body>
 
 <style>
   body {
     padding: 0 18%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: left;
+  }
+
+  .sized-box {
+    height: 4vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 8%;
+    }
+
+    h2 {
+      font-size: 3.6vh;
+    }
+
+    .container {
+      display: block;
+      justify-content: center;
+    }
+
+    .sized-box {
+      height: 0;
+    }
+
+    .batch-sized-box {
+      height: 2vh;
+    }
   }
 </style>

@@ -4,7 +4,7 @@
 
 <div class="card">
   <img src={image} alt={member} />
-  <div style="margin-left: 1vw;">
+  <div class="text">
     <h3>{member}</h3>
     <p>{role}</p>
   </div>
@@ -34,9 +34,7 @@
 
   img {
     border-radius: 4px;
-    margin: 0 1vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 2vh 1vw;
     box-shadow: 0 6px 8px #0c0c0c;
   }
 
@@ -74,5 +72,46 @@
 
   .socials a:hover {
     color: #fff;
+  }
+
+  .text {
+    margin-left: 1vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 64vw;
+      display: block;
+      margin-right: 0;
+      margin-bottom: 3vh;
+      padding-top: 2vh;
+    }
+
+    .card img {
+      max-width: 86%;
+      display: block;
+      margin: auto;
+      margin-bottom: 2vh;
+    }
+
+    h3 {
+      font-size: 2.8vh;
+    }
+
+    p {
+      font-size: 2vh;
+    }
+
+    .text {
+      margin-left: 2vh;
+    }
+
+    .socials {
+      margin: 0 2vh;
+    }
+
+    .socials a {
+      margin-right: 1vh;
+    }
   }
 </style>

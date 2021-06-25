@@ -31,7 +31,7 @@
   h4 {
     margin: 1vh 0;
     opacity: 0;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   @keyframes titleHoverOn {
@@ -102,5 +102,29 @@
     animation-name: iconHoverOff;
     animation-duration: 500ms;
     animation-fill-mode: both;
+  }
+
+  @media screen and (max-width: 768px) {
+    .resource {
+      max-width: 64vw;
+      margin-bottom: 4vh;
+      padding: 6.5vh 0;
+    }
+
+    .resource img {
+      display: block;
+      margin: 0 auto;
+      width: 24vh;
+    }
+
+    .resource h4 {
+      opacity: 1;
+      display: block;
+    }
+
+    * {
+      transition: none !important;
+      animation-name: none !important;
+    }
   }
 </style>

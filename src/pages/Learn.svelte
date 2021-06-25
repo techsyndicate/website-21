@@ -17,7 +17,7 @@
   <div style="height: 5vh" />
 
   {#each resources as rows}
-    <div style="display: flex; justify-content: space-between;">
+    <div class="container">
       {#each rows as resource}
         <ResourceCard
           field={resource.name}
@@ -26,7 +26,7 @@
         />
       {/each}
     </div>
-    <div style="height: 8vh" />
+    <div class="sized-box" />
   {/each}
   <div style="height: 10vh" />
 </body>
@@ -34,5 +34,30 @@
 <style>
   body {
     padding: 0 18%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sized-box {
+    height: 8vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 8%;
+    }
+
+    .container {
+      margin: 0;
+      display: block;
+      justify-content: left;
+    }
+
+    .sized-box {
+      height: 0;
+    }
   }
 </style>

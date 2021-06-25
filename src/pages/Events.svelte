@@ -18,7 +18,7 @@
   <div style="height: 5vh" />
 
   {#each events as rows}
-    <div style="display: flex; justify-content: left">
+    <div class="container">
       {#each rows as event}
         <EventCard
           event={event.name}
@@ -32,7 +32,7 @@
         />
       {/each}
     </div>
-    <div style="height: 6vh" />
+    <div class="sized-box" />
   {/each}
 
   <div style="height: 10vh" />
@@ -41,5 +41,29 @@
 <style>
   body {
     padding: 0 18%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: left;
+  }
+
+  .sized-box {
+    height: 6vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 8%;
+    }
+
+    .container {
+      display: block;
+      justify-content: center;
+    }
+
+    .sized-box {
+      height: 0;
+    }
   }
 </style>
