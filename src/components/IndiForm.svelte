@@ -4,7 +4,19 @@
 
 <script>
   import { notyf } from './notyf';
-
+  let shorterText = false
+  const screenWidth = screen.width
+  if(screenWidth < 768) {
+    shorterText = true
+  }
+  window.addEventListener("resize", () => {
+    const screenWidth = screen.width
+    if(screenWidth < 768) {
+      shorterText = true
+    } else {
+      shorterText = false
+    }
+  })
   let maxParticipants = {
       Hackathon: 3,
       Designathon: 3,
@@ -151,21 +163,21 @@
 <div class="inline">
 <div>
   <p>Team Name</p>
-  <input type="text" placeholder="Clubless" id="inline-input" style="width: 16.5vw;" class="team-name">
+  <input type="text" placeholder="Clubless" id="inline-input" class="team-name">
 </div>
 <div>
   <p>Team Email</p>
-  <input type="text" placeholder="clubless@gmail.com" id="inline-input" class="team-email">
+  <input type="text" placeholder="clubless@gmail.com" id="longer-inline-input" class="team-email">
 </div>
 </div>
 <div class="inline">
 <div>
   <p>Student Incharge</p>
-  <input type="text" placeholder="John Doe" id="inline-input" style="width: 16.5vw;" class="student-incharge-name">
+  <input type="text" placeholder="John Doe" id="inline-input" class="student-incharge-name">
 </div>
 <div>
   <p>Student Incharge Number</p>
-  <input type="text" placeholder="+91 7070707070" id="inline-input" class="student-incharge-number">
+  <input type="text" placeholder="+91 7070707070" id="longer-inline-input" class="student-incharge-number">
 </div>
 </div>
 <p>Choose Events</p>
@@ -191,120 +203,226 @@
 </div>
 
 {#each checkedEvents as event}
-  <p id="event-name">{event}</p>
-  {#each [...Array(maxParticipants[event]).keys()] as index}
-      <div class="inline">
-          <div>
-              <p>Participant {index+1} Name</p>
-              <input type="text" placeholder="Jane Doe" id="inline-input" style="width: 12.5vw;" class={event + '-' + (index+1) + '-Name'}>
-          </div>
-          <div style="margin-left: -1vw">
-              <p>Participant {index+1} Class</p>
-              <input type="text" placeholder="XII" id="inline-input" style="width: 9vw;" class={event + '-' + (index+1) + '-Class'}>
-          </div>
-          <div style="margin-left: -1vw">
-              <p>Participant {index+1} Email</p>
-              <input type="text" placeholder="jane@gmail.com" id="inline-input" style="width: 12.9vw;" class={event + '-' + (index+1) + '-Email'}>
-          </div>
-      </div>
-  {/each}
+    <p id="event-name">{event}</p>
+    {#each [...Array(maxParticipants[event]).keys()] as index}
+        <div class="inline">
+            <div>
+                <p>{shorterText ? `P${index+1} Name` : `Participant ${index+1} Name`}</p>
+                <input type="text" placeholder="Jane Doe" id="participant-name-input" class={event + '-' + (index+1) + '-Name'}>
+            </div>
+            <div style="margin-left: -1vw">
+                <p>{shorterText ? `P${index+1} Class` : `Participant ${index+1} Class`}</p>
+                <input type="text" placeholder="XII" id="participant-class-input" class={event + '-' + (index+1) + '-Class'}>
+            </div>
+            <div style="margin-left: -1vw">
+                <p>{shorterText ? `P${index+1} Email` : `Participant ${index+1} Email`}</p>
+                <input type="text" placeholder="jane@gmail.com" id="participant-email-input"  class={event + '-' + (index+1) + '-Email'}>
+            </div>
+        </div>
+    {/each}
 {/each}
 
 <form method="POST" action="#" id="indiForm">
-  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;"></div>
+  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;" id="recap"></div>
   <button type="submit">Register</button>
 </form>
 
 <style>
-  p {
-    font-size: 1vw;
-    color: #16e16e
-  }
+    p {
+      font-size: 1vw;
+      color: #16e16e
+    }
+    
+    .inline {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
   
-  .inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
+    #inline-input {
+      margin-right: 2vw;
+      width: 16.5vw;
+    }
+    
+    #longer-inline-input {
+      width: 19.3vw;
+    }
 
-  #inline-input {
-    margin-right: 2vw;
-    width: 19.3vw;
-  }
+    #participant-name-input {
+      margin-right: 2vw;
+      width: 12.5vw;
+    }
 
-  input[type=text] {
-    background-color: transparent;
-    height: 2.2vw;
-    border: 0.01vw white solid;
-    font-size: 1.2vw;
-    padding-left: 1vw;
-    color: white;
-    width: 39vw;
-    border-radius: 3px;
-    margin-top: -0.5rem;
-    margin-bottom: 1vw;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-  }
+    #participant-class-input {
+      margin-right: 2vw;
+      width: 9vw;
+    }
 
-  .checkboxes {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-left: -0.5vw;
-    margin-top: -0.5%;
-    margin-bottom: 1.2vw;
-  }
+    #participant-email-input {
+      margin-right: 2vw;
+      width: 12.9vw;
+    }
 
-  .checkboxes label {
-      font-size: 0.9vw;
-  }
-
-  .checkboxes .text {
-      margin-left: -0.3vw;
-  }
-
-  input.larger {
-      transform: scale(1.4);
-      border: none;
-      margin: 0.8vw;
-  }
-
-  [type="checkbox"]
-  {
-      vertical-align:middle;
-  }
-
-  .side {
-      margin-left: 1vw;
-  }
-
-  .checkboxes .right {
-      margin-left: 1vw;
-      margin-top: -5vw;
-  }
-
-  #event-name {
-      font-size: 1.5vw;
-      margin-bottom: 0.5vw;
+    input[type=text] {
+      background-color: transparent;
+      height: 2.2vw;
+      border: 0.01vw white solid;
+      font-size: 1.2vw;
+      padding-left: 1vw;
       color: white;
-  }
+      width: 39vw;
+      border-radius: 3px;
+      margin-top: -0.5rem;
+      margin-bottom: 1vw;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
 
-  button {
-    height: 2.5vw;
-    width: 8vw;
-    border: none;
-    text-align: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    color: white;
-    background-color: #00AF3B;
-    font-size: 1.2vw;
-    border-radius: 5px;
-    margin-top: 3vh
-  }
+    .checkboxes {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-left: -0.5vw;
+      margin-top: -0.5%;
+      margin-bottom: 1.2vw;
+    }
 
-  button:hover {
-    cursor: pointer;
-  }
+    .checkboxes label {
+        font-size: 0.9vw;
+    }
+
+    .checkboxes .text {
+        margin-left: -0.3vw;
+    }
+
+    input.larger {
+        transform: scale(1.4);
+        border: none;
+        margin: 0.8vw;
+    }
+
+    [type="checkbox"]
+    {
+        vertical-align:middle;
+    }
+
+    .side {
+        margin-left: 1vw;
+    }
+
+    .checkboxes .right {
+        margin-left: 1vw;
+        margin-top: -5vw;
+    }
+
+    #event-name {
+        font-size: 1.5vw;
+        margin-bottom: 0.5vw;
+        color: white;
+    }
+
+    button {
+      height: 2.5vw;
+      width: 8vw;
+      border: none;
+      text-align: center;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      color: white;
+      background-color: #00AF3B;
+      font-size: 1.2vw;
+      border-radius: 5px;
+      margin-top: 3vh
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      p {
+        font-size: 3vw;
+      }
+
+      input[type=text] {
+        height: 5vw;
+        width: 72vw;
+        padding-left: 3vw;
+        font-size: 3vw;
+        margin-bottom: 3vw;
+        margin-top: -1vw;
+      }
+
+      #inline-input {
+        margin-right: 4vw;
+        width: 32vw;
+      }
+      
+      #longer-inline-input {
+        width: 33vw;
+      }
+
+      #recap {
+        transform:scale(0.67);
+        transform-origin:0 0
+      }
+
+      .checkboxes label {
+          font-size: 3vw;
+      }
+
+      .checkboxes .text {
+          margin-left: 1vw;
+      }
+
+      input.larger {
+          transform: scale(1);
+          border: none;
+          margin: 0.8vw;
+      }
+
+      .side {
+          margin-left: 1vw;
+      }
+
+      .checkboxes .right {
+          margin-left: 0vw;
+          margin-top: 0.5vw;
+      }
+
+      #event-name {
+          font-size: 5vw;
+          margin-bottom: 0.5vw;
+          color: white;
+      }
+
+      #participant-name-input {
+        margin-right: 4vw;
+        width: 20vw;
+      }
+
+      #participant-class-input {
+        margin-right: 4vw;
+        width: 10vw;
+      }
+
+      #participant-email-input {
+        margin-right: 0vw;
+        width: 30vw;
+      }
+
+      button {
+        height: 8vw;
+        width: 20vw;
+        border: none;
+        text-align: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        color: white;
+        background-color: #00AF3B;
+        font-size: 3.5vw;
+        border-radius: 5px;
+        margin-top: 0vh
+      }
+    }
 </style>

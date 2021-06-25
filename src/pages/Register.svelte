@@ -121,4 +121,40 @@
     border: 0.01vw #00AF3B solid;
   }
 
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 8%;
+    }
+
+    .first-section .radios {
+      margin-bottom: 11vw;
+    }
+    
+    .first-section p {
+      font-size: 3vw;
+    }
+
+    .option1 {
+      width: 35vw;
+      height: 5vw;
+    }
+
+    .option2 {
+      width: 35vw;
+      height: 5vw;
+      margin-left: 4vw;
+    }
+
+    #opt1 {
+      font-size: 3.5vw;
+      margin-top: 0.4vw;
+      color: white;
+    }
+
+    #opt2 {
+      font-size: 3.5vw;
+      margin-top: 0.4vw;
+      color: white;
+    }
+  }
 </style>

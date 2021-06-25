@@ -17,7 +17,7 @@
   </header>
   <main>
     <Route path="/">
-      <Home />
+      <Register />
     </Route>
     <Route path="events">
       <Events />

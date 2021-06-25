@@ -4,7 +4,19 @@
 
 <script>
     import { notyf } from './notyf';
-
+    let shorterText = false
+    const screenWidth = screen.width
+    if(screenWidth < 768) {
+      shorterText = true
+    }
+    window.addEventListener("resize", () => {
+      const screenWidth = screen.width
+      if(screenWidth < 768) {
+        shorterText = true
+      } else {
+        shorterText = false
+      }
+    })
     let maxParticipants = {
         Hackathon: 3,
         Designathon: 3,
@@ -155,31 +167,31 @@
 <div class="inline">
   <div>
     <p>Club Name</p>
-    <input type="text" placeholder="Tech Syndicate" id="inline-input" style="width: 16.5vw;" class="club-name">
+    <input type="text" placeholder="Tech Syndicate" id="inline-input" class="club-name">
   </div>
   <div>
     <p>Club Email</p>
-    <input type="text" placeholder="cyberamity46@gmail.com" id="inline-input" class="club-email">
+    <input type="text" placeholder="ts@gmail.com" id="longer-inline-input" class="club-email">
   </div>
 </div>
 <div class="inline">
   <div>
     <p>Teacher Incharge</p>
-    <input type="text" placeholder="Chanchal Dhingra" id="inline-input" style="width: 16.5vw;" class="teacher-incharge-name">
+    <input type="text" placeholder="Chanchal Dhingra" id="inline-input" class="teacher-incharge-name">
   </div>
   <div>
     <p>Teacher Incharge Number</p>
-    <input type="text" placeholder="+91 9090909090" id="inline-input" class="teacher-incharge-number">
+    <input type="text" placeholder="+91 9090909090" id="longer-inline-input" class="teacher-incharge-number">
   </div>
 </div>
 <div class="inline">
   <div>
     <p>Student Incharge</p>
-    <input type="text" placeholder="Anshul Saha" id="inline-input" style="width: 16.5vw;" class="student-incharge-name">
+    <input type="text" placeholder="Anshul Saha" id="inline-input" class="student-incharge-name">
   </div>
   <div>
     <p>Student Incharge Number</p>
-    <input type="text" placeholder="+91 8080808080" id="inline-input" class="student-incharge-number">
+    <input type="text" placeholder="+91 8080808080" id="longer-inline-input" class="student-incharge-number">
   </div>
 </div>
 <p>Choose Events</p>
@@ -209,23 +221,23 @@
     {#each [...Array(maxParticipants[event]).keys()] as index}
         <div class="inline">
             <div>
-                <p>Participant {index+1} Name</p>
-                <input type="text" placeholder="Jane Doe" id="inline-input" style="width: 12.5vw;" class={event + '-' + (index+1) + '-Name'}>
+                <p>{shorterText ? `P${index+1} Name` : `Participant ${index+1} Name`}</p>
+                <input type="text" placeholder="Jane Doe" id="participant-name-input" class={event + '-' + (index+1) + '-Name'}>
             </div>
             <div style="margin-left: -1vw">
-                <p>Participant {index+1} Class</p>
-                <input type="text" placeholder="XII" id="inline-input" style="width: 9vw;" class={event + '-' + (index+1) + '-Class'}>
+                <p>{shorterText ? `P${index+1} Class` : `Participant ${index+1} Class`}</p>
+                <input type="text" placeholder="XII" id="participant-class-input" class={event + '-' + (index+1) + '-Class'}>
             </div>
             <div style="margin-left: -1vw">
-                <p>Participant {index+1} Email</p>
-                <input type="text" placeholder="jane@gmail.com" id="inline-input" style="width: 12.9vw;" class={event + '-' + (index+1) + '-Email'}>
+                <p>{shorterText ? `P${index+1} Email` : `Participant ${index+1} Email`}</p>
+                <input type="text" placeholder="jane@gmail.com" id="participant-email-input"  class={event + '-' + (index+1) + '-Email'}>
             </div>
         </div>
     {/each}
 {/each}
 
 <form method="POST" action="#" id="schoolForm">
-  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;"></div>
+  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;" id="recap"></div>
   <button type="submit">Register</button>
 </form>
 
@@ -243,9 +255,28 @@
   
     #inline-input {
       margin-right: 2vw;
+      width: 16.5vw;
+    }
+    
+    #longer-inline-input {
       width: 19.3vw;
     }
-  
+
+    #participant-name-input {
+      margin-right: 2vw;
+      width: 12.5vw;
+    }
+
+    #participant-class-input {
+      margin-right: 2vw;
+      width: 9vw;
+    }
+
+    #participant-email-input {
+      margin-right: 2vw;
+      width: 12.9vw;
+    }
+
     input[type=text] {
       background-color: transparent;
       height: 2.2vw;
@@ -320,5 +351,92 @@
 
     button:hover {
       cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      p {
+        font-size: 3vw;
+      }
+
+      input[type=text] {
+        height: 5vw;
+        width: 72vw;
+        padding-left: 3vw;
+        font-size: 3vw;
+        margin-bottom: 3vw;
+        margin-top: -1vw;
+      }
+
+      #inline-input {
+        margin-right: 4vw;
+        width: 32vw;
+      }
+      
+      #longer-inline-input {
+        width: 33vw;
+      }
+
+      #recap {
+        transform:scale(0.67);
+        transform-origin:0 0
+      }
+
+      .checkboxes label {
+          font-size: 3vw;
+      }
+
+      .checkboxes .text {
+          margin-left: 1vw;
+      }
+
+      input.larger {
+          transform: scale(1);
+          border: none;
+          margin: 0.8vw;
+      }
+
+      .side {
+          margin-left: 1vw;
+      }
+
+      .checkboxes .right {
+          margin-left: 0vw;
+          margin-top: 0.5vw;
+      }
+
+      #event-name {
+          font-size: 5vw;
+          margin-bottom: 0.5vw;
+          color: white;
+      }
+
+      #participant-name-input {
+        margin-right: 4vw;
+        width: 20vw;
+      }
+
+      #participant-class-input {
+        margin-right: 4vw;
+        width: 10vw;
+      }
+
+      #participant-email-input {
+        margin-right: 0vw;
+        width: 30vw;
+      }
+
+      button {
+        height: 8vw;
+        width: 20vw;
+        border: none;
+        text-align: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        color: white;
+        background-color: #00AF3B;
+        font-size: 3.5vw;
+        border-radius: 5px;
+        margin-top: 0vh
+      }
     }
 </style>

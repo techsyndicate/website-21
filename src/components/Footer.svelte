@@ -51,7 +51,7 @@
 
     @media screen and (max-width: 768px) {
         .footer {
-            height: 14vh;
+            height: 12vh;
         }
 
         .links {
