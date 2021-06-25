@@ -101,6 +101,8 @@
     height: 2.2vw;
     text-align: center;
     border-radius: 3px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 
   .option2 {
@@ -110,6 +112,8 @@
     text-align: center;
     border-radius: 3px;
     margin-left: 2vw;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 
   .selected {

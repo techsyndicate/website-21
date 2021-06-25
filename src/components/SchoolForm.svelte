@@ -1,7 +1,9 @@
+<svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</svelte:head>
+
 <script>
-    import { onMount, onDestroy } from 'svelte';
     import { notyf } from './notyf';
-    import Captcha from "./Captcha.svelte";
 
     let maxParticipants = {
         Hackathon: 3,
@@ -37,20 +39,6 @@
         checkedEvents.splice(index, 1);
       }
       checkedEvents = checkedEvents 
-    }
-
-    let captchaStatus = false;
-    const validateCaptcha = async (captchaToken) => {
-      const response = await (await fetch("https://ts-reg-21.herokuapp.com/captcha", {
-        method: "POST",
-        body: JSON.stringify({
-          hcaptchaToken: captchaToken,
-          hcaptchaSecret: hcaptcha.secret
-        }),
-        headers: { 'Content-Type': 'application/json' }
-      })).json();
-
-      captchaStatus = response.success;
     }
 
     const submitSchoolForm = async () => {
@@ -96,11 +84,7 @@
             formData[fieldName] = participant
           } 
         })
-
-        if (!captchaStatus) {
-          return notyf.error("CAPTCHA verification failed. Please try again.");
-        }
-
+        console.log(formData)
         fetch('https://ts-reg-21.herokuapp.com/school', {
             method: "POST",
             body: JSON.stringify(formData),
@@ -113,7 +97,7 @@
             notyf.success(resp);
             setTimeout(() => {
               window.location.reload();
-            }, 1000);
+            }, 2000);
           })
           .catch(err => {
             notyf.error(err);
@@ -124,15 +108,6 @@
         });
       }
     }
-
-    onMount(() => {
-      window.validateCaptcha = validateCaptcha;
-    });
-
-    onDestroy(() => {
-      window.validateCaptcha = null;
-    });
-
 
     window.addEventListener('click', (e) => {
           if (e.target.id === "school-submit-button") {
@@ -145,6 +120,33 @@
         } else if(e.target.checked === true) {
           addEvent(e.target.value)
         }
+    })
+
+    window.addEventListener('submit', (e) => {
+      e.preventDefault()
+      if(e.target.id === "schoolForm") {
+        const recaptchaResponse = grecaptcha.getResponse();
+        console.log(recaptchaResponse)
+        if(recaptchaResponse.length === 0) 
+        { 
+          notyf.error('CAPTCHA verification failed. Please try again.') 
+        } else {
+          fetch(`https://ts-reg-21.herokuapp.com/verify?response=${recaptchaResponse}`)
+          .then(async(res) => {
+            const response = await res.json()
+            console.log(response)
+            if(response.success) {
+              submitSchoolForm();
+            } else {
+              notyf.error('CAPTCHA verification failed. Please try again.')
+            }
+          })
+          .catch(err => {
+            console.log(err)
+            notyf.error('CAPTCHA verification failed. Please try again.')
+          })
+        }
+      }
     })
 </script>
 
@@ -222,11 +224,10 @@
     {/each}
 {/each}
 
-<Captcha siteKey={hcaptcha.siteKey}/>
-
-{#if checkedEvents.length > 0}
-  <button id="school-submit-button">Register</button>
-{/if}
+<form method="POST" action="#" id="schoolForm">
+  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;"></div>
+  <button type="submit">Register</button>
+</form>
 
 <style>
     p {
@@ -254,8 +255,10 @@
       color: white;
       width: 39vw;
       border-radius: 3px;
-      margin-top: -10%;
+      margin-top: -0.5rem;
       margin-bottom: 1vw;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
     }
 
     .checkboxes {

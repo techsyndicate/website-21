@@ -75,7 +75,8 @@ export default {
 			hcaptcha: JSON.stringify({
 				secret: hcaptchaSecret,
 				siteKey: hcaptchaSiteKey
-			})
+			}),
+			preventAssignment: true
 		}),
 
 		// In dev mode, call `npm run start` once
