@@ -106,7 +106,8 @@
 
   @media screen and (max-width: 768px) {
     .resource {
-      max-width: 64vw;
+      max-width: 84vw;
+      width: 84vw;
       margin-bottom: 4vh;
       padding: 5vh 0;
       padding-bottom: 4vh;

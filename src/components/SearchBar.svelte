@@ -60,7 +60,7 @@
 
   @media screen and (max-width: 768px) {
       .searchbar {
-          width: 60vw;
+          width: 70vw;
           display: flex;
       }
 

@@ -80,11 +80,11 @@
 
   @media screen and (max-width: 768px) {
     .card {
-      width: 64vw;
+      width: 84vw;
       display: block;
       margin-right: 0;
       margin-bottom: 3vh;
-      padding-top: 2vh;
+      padding-top: 3vh;
     }
 
     .card img {
@@ -95,19 +95,19 @@
     }
 
     h3 {
-      font-size: 2.8vh;
+      font-size: 3vh;
     }
 
     p {
-      font-size: 2vh;
+      font-size: 2.2vh;
     }
 
     .text {
-      margin-left: 2vh;
+      margin-left: 3vh;
     }
 
     .socials {
-      margin: 0 2vh;
+      margin: 0 3vh;
     }
 
     .socials a {

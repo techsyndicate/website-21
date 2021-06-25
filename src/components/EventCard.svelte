@@ -74,7 +74,8 @@
       .card {
         width: 100%;
         margin: 0;
-        max-width: 64vw;
+        max-width: 72vw;
+        max-width: 72vw;
         padding: 4vh 6vw;
         margin-bottom: 4vh;
       }
