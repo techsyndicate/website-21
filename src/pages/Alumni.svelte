@@ -96,7 +96,7 @@
       <div class="batch-sized-box" />
     {/if}
   {/each}
-  <div style="height: 6vh;"/>
+  <div style="height: 10vh;"/>
 </body>
 
 <style>

@@ -108,13 +108,16 @@
     .resource {
       max-width: 64vw;
       margin-bottom: 4vh;
-      padding: 6.5vh 0;
+      padding: 5vh 0;
+      padding-bottom: 4vh;
+      max-height: 30vh;
     }
 
     .resource img {
       display: block;
       margin: 0 auto;
       width: 24vh;
+      margin-bottom: 3vh;
     }
 
     .resource h4 {

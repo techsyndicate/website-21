@@ -48,6 +48,36 @@
     footer p {
         color: #707070;
     }
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            height: 14vh;
+        }
+
+        .links {
+            height: 3vh;
+        }
+
+        .link {
+            height: 10vw;
+            width: 10vw;
+            margin-right: 5vw;
+        }
+
+        .link svg {
+            margin-top: 2.3vw;
+            height: 5vw;
+            width: 5vw;
+        }
+
+        footer .cr {
+            width: 59.5vw;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 6vh;
+            font-size: 3.2vw;
+        }
+    }
 </style>
 
 <body>
