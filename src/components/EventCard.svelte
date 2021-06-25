@@ -64,6 +64,12 @@
       bottom: 0;
       margin-bottom: 1.5vw;
       font-size: 1vw;
+      transition: all 0.2s ease-out;
+      display: inline-block;
+    }
+
+    .card-button:hover {
+      transform: translateX(0.5vh);
     }
 
     .bottom-items img {

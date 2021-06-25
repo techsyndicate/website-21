@@ -5,7 +5,7 @@
             "eligibility": "IX-XII",
             "participants": "3",
             "description": "A classic online hackathon where plagiarism is scoffed at but Stack Overflow is the way to go.",
-            "format": "",
+            "format": "https://t11e.us/hack/prelims",
             "icon": "/assets/icons/hack.svg",
             "color": "#2A3E98",
             "buttonText": "Prelims"
@@ -14,8 +14,8 @@
             "name": "Designathon",
             "eligibility": "IX-XII",
             "participants": "3",
-            "description": "“Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs",
-            "format": "",
+            "description": "“Design is not just what it looks like and feels like. Design is how it works.” — Steve Jobs",
+            "format": "https://t11e.us/design/prelims",
             "icon": "/assets/icons/designathon.svg",
             "color": "#006A4C",
             "buttonText": "Prelims"
@@ -25,7 +25,7 @@
             "eligibility": "Open",
             "participants": "Open",
             "description": "Google is your best friend; the mods are not.",
-            "format": "",
+            "format": "https://t11e.us/encryptid/format",
             "icon": "/assets/icons/encryptid.svg",
             "color": "#891145",
             "buttonText": "Format"
@@ -37,7 +37,7 @@
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "A tech-based crossword solely based on puns.",
-            "format": "",
+            "format": "https://t11e.us/cross/prelims",
             "icon": "/assets/icons/cross.svg",
             "color": "#5730BA",
             "buttonText": "Prelims"
@@ -47,7 +47,7 @@
             "eligibility": "IX-XII",
             "participants": "1",
             "description": "An engaging panel discussion debating the rights and wrongs of the latest technology trends/issues.",
-            "format": "",
+            "format": "https://t11e.us/gd/prelims",
             "icon": "/assets/icons/gd.svg",
             "color": "#7C457C",
             "buttonText": "Prelims"
@@ -56,8 +56,8 @@
             "name": "Surprise",
             "eligibility": "IX-XII",
             "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "description": "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>--.++++++++++++++++.-----------------.++++++++.+++++.--------.+++++++++++++++.------------------.++++++++.",
+            "format": "https://t11e.us/surprise",
             "icon": "/assets/icons/surprise.svg",
             "color": "#A89100",
             "buttonText": "Prelims"
@@ -69,7 +69,7 @@
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "format": "https://t11e.us/hardware/prelims",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
             "buttonText": "Prelims"
@@ -79,20 +79,20 @@
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "format": "https://t11e.us/jrrobo/format",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
-            "buttonText": "Prelims"
+            "buttonText": "Format"
         },
         {
             "name": "Minecraft",
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "format": "https://t11e.us/minecraft/format",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
-            "buttonText": "Prelims"
+            "buttonText": "Format"
         }
     ],
     [
@@ -101,20 +101,20 @@
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "format": "https://t11e.us/adobespark/format",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
-            "buttonText": "Prelims"
+            "buttonText": "Format"
         },
         {
             "name": "Paint 3D",
             "eligibility": "IX-XII",
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
-            "format": "",
+            "format": "https://t11e.us/paint3d/format",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
-            "buttonText": "Prelims"
+            "buttonText": "Format"
         }
     ]
 ]

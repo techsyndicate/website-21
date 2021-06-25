@@ -24,7 +24,7 @@
       <h1>ROBOTRONICS '21</h1>
       <p>26th July - 6th August</p>
       <div class="buttons">
-        <a href="/server" style="text-decoration: none;" target="_blank"
+        <a href="https://t11e.us/server" style="text-decoration: none;" target="_blank"
           ><span class="nav-link-button">Discord</span></a
         >
         <a class="video-play-button" id="play">
@@ -81,12 +81,7 @@
       <span style="text-align: center; display: block;">Tech Syndicate International School</span>
     </div>
     <div class="right">
-      <h1>
-        <span style="color: #16e16e; font-size: 2vw; font-weight: 550;"
-          >About</span
-        >
-      </h1>
-      <h1 style="margin-top: -4vh">Tech Syndicate</h1>
+      <h1 style="color: #16e16e;">Tech Syndicate</h1>
       <p>
         Established in 2016, Tech Syndicate is the technology club of Amity
         International School, Sector-46, Gurgaon. The club works constantly to
@@ -156,19 +151,24 @@
     align-items: center;
     color: #16e16e;
     font-size: 1vw;
-    margin-left: 1.5vw;
+    margin-left: 1vw;
   }
 
   .nav-link-button {
     text-decoration: none;
-    border: none;
-    background-color: #00af3b;
-    color: white;
+    border: 1px solid #00ae40;
+    background-color: #00ae40;
+    color: #fff;
     border-radius: 5px;
     font-size: 1vw;
     margin-left: 4vw;
-    padding: 0.8vh 1vw;
-    transition: all 0.2s;
+    padding: 0.8vh 1.8vw;
+    transition: all 0.2s ease-out;
+    display: inline-block;
+    }
+
+  .nav-link-button:hover {
+    transform: translateY(-0.5vh);
   }
 
   .second-section {
