@@ -215,37 +215,4 @@
     margin-top: -1vw;
     margin-bottom: 13vh;
   }
-
-  .third-section .left {
-    width: 38vw;
-    height: 55vh;
-    position: absolute;
-    left: 0;
-    margin-left: 5vw;
-  }
-
-  .third-section .right {
-    margin-left: 10%;
-    width: 45%;
-    height: 55vh;
-    position: absolute;
-    right: 0;
-    margin-right: 5vw;
-    margin-top: -13vh;
-  }
-
-  .third-section .left img {
-    width: 100%;
-    height: auto;
-    margin-left: 0vw;
-    margin-top: -4vh;
-  }
-
-  .third-section .right h1 {
-    font-size: 2.5vw;
-  }
-
-  .third-section .right p {
-    font-size: 1.1vw;
-  }
 </style>

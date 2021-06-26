@@ -1,201 +1,186 @@
 <script>
   import { Link } from "svelte-navigator";
   let activePath = window.location.pathname;
+  let resp = false
+  let showSidebar = false
+  let showNav = true
 
-  window.onload = () => {
-    const screenWidth = screen.width;
-    if (screenWidth < 768) {
-      document.getElementById("normal-nav").style.display = "none";
-      document.getElementById("responsive-nav").style.display = "flex";
-      hideSidebar();
-    } else {
-      document.getElementById("normal-nav").style.display = "flex";
-      document.getElementById("responsive-nav").style.display = "none";
-    }
-  };
+  const screenWidth = screen.width;
+  if (screenWidth < 768) {
+    resp = true
+  } else {
+    resp = false
+  }
 
   window.addEventListener("resize", () => {
     const screenWidth = screen.width;
     if (screenWidth < 768) {
-      document.getElementById("normal-nav").style.display = "none";
-      document.getElementById("responsive-nav").style.display = "flex";
+      resp = true
     } else {
-      document.getElementById("normal-nav").style.display = "flex";
-      document.getElementById("responsive-nav").style.display = "none";
+      resp = false
     }
   });
 
   window.addEventListener("click", (e) => {
     activePath = window.location.pathname;
     if (e.target.id === "hamburger-icon") {
-      showSidebar();
-    } else if (e.target.id === "close-icon") {
-      hideSidebar();
-    } else if (e.target.id === "sidebar-link" || e.target.id === "ts-sidebar") {
-      hideSidebar();
+      showSidebar = true
+      showNav = false
+    } else if (e.target.id === "close-icon" || "sidebar-link" || e.target.id === "ts-sidebar") {
+      showSidebar = false
+      showNav = true
     }
   });
-
-  const showSidebar = () => {
-    try {
-      document.getElementsByClassName("sidebar")[0].style.display = "block";
-      document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const hideSidebar = () => {
-    try {
-      document.getElementsByClassName("sidebar")[0].style.display = "none";
-      document.getElementsByTagName("html")[0].style.overflow = "initial";
-    } catch (err) {
-      console.log(err);
-    }
-  };
 </script>
 
 <body>
-  <nav style="display: none;" id="normal-nav">
-    <div class="left">
-      <Link to="/"><img src="/assets/images/ts.png" alt="ts" /></Link>
-    </div>
-    <div class="right">
-      {#if activePath === "/events"}
-        <Link to="/events" style="text-decoration: none;"
-          ><span class="nav-link active">Events</span></Link
-        >
-      {:else}
-        <Link to="/events" style="text-decoration: none;"
-          ><span class="nav-link">Events</span></Link
-        >
-      {/if}
-      {#if activePath === "/members"}
-        <Link to="/members" style="text-decoration: none;"
-          ><span class="nav-link active">Members</span></Link
-        >
-      {:else}
-        <Link to="/members" style="text-decoration: none;"
-          ><span class="nav-link">Members</span></Link
-        >
-      {/if}
-      {#if activePath === "/alumni"}
-        <Link to="/alumni" style="text-decoration: none;"
-          ><span class="nav-link active">Alumni</span></Link
-        >
-      {:else}
-        <Link to="/alumni" style="text-decoration: none;"
-          ><span class="nav-link">Alumni</span></Link
-        >
-      {/if}
-      {#if activePath === "/learn"}
-        <Link to="/learn" style="text-decoration: none;"
-          ><span class="nav-link active">Learn</span></Link
-        >
-      {:else}
-        <Link to="/learn" style="text-decoration: none;"
-          ><span class="nav-link">Learn</span></Link
-        >
-      {/if}
-      <Link to="/register" style="text-decoration: none;"
-        ><span class="nav-link-button">Register</span></Link
-      >
-    </div>
-  </nav>
-  <div class="sidebar" style="display: none;">
-    <img src="/assets/icons/close.svg" alt="close" id="close-icon" />
-    <div class="links">
-      <Link to="/"
-        ><img src="/assets/images/ts.png" alt="ts" id="ts-sidebar" /></Link
-      >
-      {#if activePath === "/events"}
-        <Link to="/events" style="text-decoration: none;"
-          ><p
-            class="sidebar-nav-link sidebar-nav-link-active"
-            id="sidebar-link"
+  {#if showNav === true}
+      {#if resp === true}
+      <nav>
+        <div class="left">
+          {#if activePath !== "/"}
+            <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" /></Link>
+          {:else}
+            <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" style="margin-top: -1vw;" /></Link>
+          {/if}
+        </div>
+        <div class="right">
+          {#if activePath !== "/"}
+            <img
+              src="/assets/icons/hamburger.svg"
+              alt="hamburger-icon"
+              id="hamburger-icon"
+            />
+          {:else}
+            <img
+              src="/assets/icons/hamburger.svg"
+              alt="hamburger-icon"
+              id="hamburger-icon"
+              style="margin-top: -1vw;"
+            />
+          {/if}
+        </div>
+      </nav>
+    {:else}
+      <nav>
+        <div class="left">
+          <Link to="/"><img src="/assets/images/ts.png" alt="ts" /></Link>
+        </div>
+        <div class="right">
+          {#if activePath === "/events"}
+            <Link to="/events" style="text-decoration: none;"
+              ><span class="nav-link active">Events</span></Link
+            >
+          {:else}
+            <Link to="/events" style="text-decoration: none;"
+              ><span class="nav-link">Events</span></Link
+            >
+          {/if}
+          {#if activePath === "/members"}
+            <Link to="/members" style="text-decoration: none;"
+              ><span class="nav-link active">Members</span></Link
+            >
+          {:else}
+            <Link to="/members" style="text-decoration: none;"
+              ><span class="nav-link">Members</span></Link
+            >
+          {/if}
+          {#if activePath === "/alumni"}
+            <Link to="/alumni" style="text-decoration: none;"
+              ><span class="nav-link active">Alumni</span></Link
+            >
+          {:else}
+            <Link to="/alumni" style="text-decoration: none;"
+              ><span class="nav-link">Alumni</span></Link
+            >
+          {/if}
+          {#if activePath === "/learn"}
+            <Link to="/learn" style="text-decoration: none;"
+              ><span class="nav-link active">Learn</span></Link
+            >
+          {:else}
+            <Link to="/learn" style="text-decoration: none;"
+              ><span class="nav-link">Learn</span></Link
+            >
+          {/if}
+          <Link to="/register" style="text-decoration: none;"
+            ><span class="nav-link-button">Register</span></Link
           >
-            Events
-          </p></Link
+        </div>
+      </nav>
+    {/if}
+  {/if}
+  {#if showSidebar === true}
+    <div class="sidebar">
+      <img src="/assets/icons/close.svg" alt="close" id="close-icon" />
+      <div class="links">
+        <Link to="/"
+          ><img src="/assets/images/ts.png" alt="ts" id="ts-sidebar" /></Link
         >
-      {:else}
-        <Link to="/events" style="text-decoration: none;"
-          ><p class="sidebar-nav-link" id="sidebar-link">Events</p></Link
-        >
-      {/if}
-      {#if activePath === "/members"}
-        <Link to="/members" style="text-decoration: none;"
-          ><p
-            class="sidebar-nav-link sidebar-nav-link-active"
-            id="sidebar-link"
+        {#if activePath === "/events"}
+          <Link to="/events" style="text-decoration: none;"
+            ><p
+              class="sidebar-nav-link sidebar-nav-link-active"
+              id="sidebar-link"
+            >
+              Events
+            </p></Link
           >
-            Members
-          </p></Link
-        >
-      {:else}
-        <Link to="/members" style="text-decoration: none;"
-          ><p class="sidebar-nav-link" id="sidebar-link">Members</p></Link
-        >
-      {/if}
-      {#if activePath === "/alumni"}
-        <Link to="/alumni" style="text-decoration: none;"
-          ><p
-            class="sidebar-nav-link sidebar-nav-link-active"
-            id="sidebar-link"
+        {:else}
+          <Link to="/events" style="text-decoration: none;"
+            ><p class="sidebar-nav-link" id="sidebar-link">Events</p></Link
           >
-            Alumni
-          </p></Link
-        >
-      {:else}
-        <Link to="/alumni" style="text-decoration: none;"
-          ><p class="sidebar-nav-link" id="sidebar-link">Alumni</p></Link
-        >
-      {/if}
-      {#if activePath === "/learn"}
-        <Link to="/learn" style="text-decoration: none;"
-          ><p
-            class="sidebar-nav-link sidebar-nav-link-active"
-            id="sidebar-link"
+        {/if}
+        {#if activePath === "/members"}
+          <Link to="/members" style="text-decoration: none;"
+            ><p
+              class="sidebar-nav-link sidebar-nav-link-active"
+              id="sidebar-link"
+            >
+              Members
+            </p></Link
           >
-            Learn
-          </p></Link
+        {:else}
+          <Link to="/members" style="text-decoration: none;"
+            ><p class="sidebar-nav-link" id="sidebar-link">Members</p></Link
+          >
+        {/if}
+        {#if activePath === "/alumni"}
+          <Link to="/alumni" style="text-decoration: none;"
+            ><p
+              class="sidebar-nav-link sidebar-nav-link-active"
+              id="sidebar-link"
+            >
+              Alumni
+            </p></Link
+          >
+        {:else}
+          <Link to="/alumni" style="text-decoration: none;"
+            ><p class="sidebar-nav-link" id="sidebar-link">Alumni</p></Link
+          >
+        {/if}
+        {#if activePath === "/learn"}
+          <Link to="/learn" style="text-decoration: none;"
+            ><p
+              class="sidebar-nav-link sidebar-nav-link-active"
+              id="sidebar-link"
+            >
+              Learn
+            </p></Link
+          >
+        {:else}
+          <Link to="/learn" style="text-decoration: none;"
+            ><p class="sidebar-nav-link" id="sidebar-link">Learn</p></Link
+          >
+        {/if}
+        <Link to="/register" style="text-decoration: none;"
+          ><button class="sidebar-nav-link-button" id="sidebar-link"
+            >Register</button
+          ></Link
         >
-      {:else}
-        <Link to="/learn" style="text-decoration: none;"
-          ><p class="sidebar-nav-link" id="sidebar-link">Learn</p></Link
-        >
-      {/if}
-      <Link to="/register" style="text-decoration: none;"
-        ><button class="sidebar-nav-link-button" id="sidebar-link"
-          >Register</button
-        ></Link
-      >
+      </div>
     </div>
-  </div>
-  <nav style="display: none;" id="responsive-nav">
-    <div class="left">
-      {#if activePath !== "/"}
-        <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" /></Link>
-      {:else}
-        <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" style="margin-top: -1vw;" /></Link>
-      {/if}
-    </div>
-    <div class="right">
-      {#if activePath !== "/"}
-        <img
-          src="/assets/icons/hamburger.svg"
-          alt="hamburger-icon"
-          id="hamburger-icon"
-        />
-      {:else}
-        <img
-          src="/assets/icons/hamburger.svg"
-          alt="hamburger-icon"
-          id="hamburger-icon"
-          style="margin-top: -1vw;"
-        />
-      {/if}
-    </div>
-  </nav>
+  {/if}
 </body>
 
 <style>
