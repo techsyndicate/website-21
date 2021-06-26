@@ -329,7 +329,7 @@
     #ts {
       width: 12vw;
       height: 12vw;
-      margin-top: 0.5vw;
+      margin-top: 1vw;
     }
   }
 </style>

@@ -73,7 +73,10 @@
     }
 
     .bottom-items img {
-      margin-left: 45%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: -2.5vw;
     }
 
     @media screen and (max-width: 768px) {
@@ -109,6 +112,11 @@
         margin-top: -12vh;
         margin-right: -18vw;
         margin-bottom: 4vh;
+      }
+
+      .bottom-items img {
+        margin-bottom: -30vw;
+        margin-left: 42vw;
       }
     }
 </style>
