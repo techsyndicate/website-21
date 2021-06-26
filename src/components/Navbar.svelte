@@ -189,7 +189,7 @@
     padding-right: 5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background-color: transparent !important;
+    background-color: transparent;
     width: 90vw;
     height: 5.5vh;
     display: flex;
