@@ -37,12 +37,12 @@
         {
             "name": "Group Discussion",
             "slug": "/resources/gd",
-            "icon": "/assets/icons/gd.svg"
+            "icon": "/assets/icons/gdlr.svg"
         },
         {
             "name": "Crossword",
             "slug": "/resources/cross",
-            "icon": "/assets/icons/cross.svg"
+            "icon": "/assets/icons/crosslr.svg"
         },
         {
             "name": "Quiz",

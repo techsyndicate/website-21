@@ -80,8 +80,8 @@
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "https://t11e.us/jrrobo/format",
-            "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1",
+            "icon": "/assets/icons/jrrobo.svg",
+            "color": "#009A35",
             "buttonText": "Format"
         },
         {
@@ -90,8 +90,8 @@
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "https://t11e.us/minecraft/format",
-            "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1",
+            "icon": "/assets/icons/minecraft.svg",
+            "color": "#1E85A3",
             "buttonText": "Format"
         }
     ],
@@ -102,8 +102,8 @@
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "https://t11e.us/adobespark/format",
-            "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1",
+            "icon": "/assets/icons/adobespark.svg",
+            "color": "#C18600",
             "buttonText": "Format"
         },
         {
@@ -112,8 +112,8 @@
             "participants": "2",
             "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
             "format": "https://t11e.us/paint3d/format",
-            "icon": "/assets/icons/hardware.svg",
-            "color": "#7542B1",
+            "icon": "/assets/icons/paint3d.svg",
+            "color": "#930028",
             "buttonText": "Format"
         }
     ]
