@@ -175,14 +175,25 @@
     <div class="left">
       {#if activePath !== "/"}
         <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" /></Link>
+      {:else}
+        <Link to="/"><img src="/assets/images/ts.png" alt="ts" id="ts" style="margin-top: -1vw;" /></Link>
       {/if}
     </div>
     <div class="right">
-      <img
-        src="/assets/icons/hamburger.svg"
-        alt="hamburger-icon"
-        id="hamburger-icon"
-      />
+      {#if activePath !== "/"}
+        <img
+          src="/assets/icons/hamburger.svg"
+          alt="hamburger-icon"
+          id="hamburger-icon"
+        />
+      {:else}
+        <img
+          src="/assets/icons/hamburger.svg"
+          alt="hamburger-icon"
+          id="hamburger-icon"
+          style="margin-top: -1vw;"
+        />
+      {/if}
     </div>
   </nav>
 </body>
@@ -193,7 +204,7 @@
     padding-right: 5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background-color: transparent;
+    background-color: transparent !important;
     width: 90vw;
     height: 5.5vh;
     display: flex;

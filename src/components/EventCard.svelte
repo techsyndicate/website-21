@@ -66,6 +66,7 @@
       font-size: 1vw;
       transition: all 0.2s ease-out;
       display: inline-block;
+      z-index: 2;
     }
 
     .card-button:hover {
@@ -77,6 +78,7 @@
       bottom: 0;
       left: 0;
       margin-bottom: -2.5vw;
+      z-index: 0;
     }
 
     @media screen and (max-width: 768px) {

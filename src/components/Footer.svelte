@@ -1,3 +1,19 @@
+<script>
+  let shorterText = false
+  const screenWidth = screen.width
+  if(screenWidth < 768) {
+    shorterText = true
+  }
+  window.addEventListener("resize", () => {
+    const screenWidth = screen.width
+    if(screenWidth < 768) {
+      shorterText = true
+    } else {
+      shorterText = false
+    }
+  })
+</script>
+
 <body>
   <footer class="footer">
     <div class="links">
@@ -86,7 +102,7 @@
       </a>
     </div>
     <div class="cr">
-      <p>Tech Syndicate · Amity International School, Sector 46, Gurgaon</p>
+      <p>{shorterText ? 'Tech Syndicate · AISG-46' : 'Tech Syndicate · Amity International School, Sector 46, Gurgaon'}</p>
     </div>
   </footer>
 </body>
