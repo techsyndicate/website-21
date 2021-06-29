@@ -146,7 +146,7 @@
       const recaptchaResponse = grecaptcha.getResponse();
       if (recaptchaResponse.length === 0) {
         notyf.error("CAPTCHA verification failed. Please try again.");
-        document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
+        document.getElementById("schoolForm").getElementsByTagName("button")[0].disabled = false;
       } else {
         const submitNotification = notyf.success({
           message: "Submitting your form.",
