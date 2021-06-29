@@ -56,7 +56,7 @@
             "name": "Surprise",
             "eligibility": "IX-XII",
             "participants": "2",
-            "description": "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>--.++++++++++++++++.-----------------.++++++++.+++++.--------.+++++++++++++++.------------------.++++++++.",
+            "description": "NzMgNzUgNzIgNzAgNzIgNjkgNzMgNjUgMjEgMjEgMjEgMjEgMjE",
             "format": "https://t11e.us/surprise",
             "icon": "/assets/icons/surprise.svg",
             "color": "#A89100",
@@ -76,24 +76,24 @@
             "buttonText": "Prelims"
         },
         {
-            "name": "Jr. Robotics",
+            "name": "Robotics",
             "eligibility": "VI-VIII",
             "participants": "1",
             "description": "A signature robotics event where you display your creativity and problem-solving abilities using the ever-growing field of robotics.",
-            "format": "https://t11e.us/jrrobo/format",
+            "format": "https://t11e.us/robo/prompt",
             "icon": "/assets/icons/jrrobo.svg",
             "color": "#009A35",
-            "buttonText": "Format"
+            "buttonText": "Prompt"
         },
         {
             "name": "Minecraft",
             "eligibility": "VII-IX",
             "participants": "2",
             "description": "Unleash your creativity in an infinite world where you are bounded only by your thinking ability.",
-            "format": "https://t11e.us/minecraft/format",
+            "format": "https://t11e.us/minecraft/prompt",
             "icon": "/assets/icons/minecraft.svg",
             "color": "#1E85A3",
-            "buttonText": "Format"
+            "buttonText": "Prompt"
         }
     ],
     [
@@ -102,20 +102,20 @@
             "eligibility": "V-VI",
             "participants": "1",
             "description": "Your canvas is everywhere in a way that was never possible before, and every story can reach every single surface.",
-            "format": "https://t11e.us/adobespark/format",
+            "format": "https://t11e.us/adobespark/prompt",
             "icon": "/assets/icons/adobespark.svg",
             "color": "#C18600",
-            "buttonText": "Format"
+            "buttonText": "Prompt"
         },
         {
             "name": "Paint 3D",
             "eligibility": "III-IV",
             "participants": "1",
             "description": "“Life is a big canvas—throw all the paint you can on it.” Exhibit your artistry using Paint 3D.",
-            "format": "https://t11e.us/paint3d/format",
+            "format": "https://t11e.us/paint3d/prompt",
             "icon": "/assets/icons/paint3d.svg",
             "color": "#930028",
-            "buttonText": "Format"
+            "buttonText": "Prompt"
         }
     ]
 ]
