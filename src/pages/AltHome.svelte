@@ -21,7 +21,7 @@
   <div class="first-section">
     <img src="/assets/images/illus-mob.png" alt="illus-mob" />
     <div class="text">
-      <p>26th July - 6th August</p>
+      <p>July 20 – July 30, 2021</p>
       <h1>ROBOTRONICS '21</h1>
       <div class="buttons">
         <a
@@ -181,6 +181,7 @@
     padding: 1vh 2vw;
     transition: all 0.2s ease-out;
     display: inline-block;
+    margin-bottom: 2vh;
   }
 
   .section-button:hover {
@@ -234,12 +235,5 @@
     width: 90vw;
     margin-left: -2vw;
     margin-top: 0vh;
-  }
-
-  #caption {
-    text-align: center;
-    font-size: 3vw;
-    margin-top: -1vw;
-    margin-bottom: 13vh;
   }
 </style>
