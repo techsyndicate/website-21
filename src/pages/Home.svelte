@@ -1,19 +1,21 @@
-<svelte:head>
-  <title>TS | Home</title>
-</svelte:head>
-
 <script>
   import BigPicture from "bigpicture";
-  window.addEventListener('click', (e) => {
-    if(e.target.id === "watch-icon" || e.target.id === "watch-text") {
+  import { Link } from "svelte-navigator";
+
+  window.addEventListener("click", (e) => {
+    if (e.target.id === "watch-icon" || e.target.id === "watch-text") {
       BigPicture({
         el: e.target,
         ytSrc: "erE1Nf2hCmk",
         dimensions: [960, 540],
       });
     }
-  })
+  });
 </script>
+
+<svelte:head>
+  <title>TS | Home</title>
+</svelte:head>
 
 <body>
   <div class="first-section">
@@ -22,10 +24,12 @@
     </div>
     <div class="text">
       <h1>ROBOTRONICS '21</h1>
-      <p>26th July - 6th August</p>
+      <p>July 20 – July 30, 2021</p>
       <div class="buttons">
-        <a href="https://t11e.us/server" style="text-decoration: none;" target="_blank"
-          ><span class="nav-link-button">Discord</span></a
+        <a
+          href="https://t11e.us/server"
+          style="text-decoration: none;"
+          target="_blank"><span class="nav-link-button">Discord</span></a
         >
         <a class="video-play-button" id="play">
           <span class="watch" id="watch-text">
@@ -56,9 +60,9 @@
       <h1><span style="color: #16e16e">Robotronics</span> '21</h1>
       <p>
         Robotronics '21, the 8th edition of Tech Syndicate's annual event, will
-        take place from 20th July to 30th July. Beginning as a robotics
+        take place from July 20, 2021 to July 30, 2021. Beginning as a robotics
         exclusive symposium, Robotronics has now evolved and branched out to
-        include in events across a much wider variety of domains.
+        include events across a much wider variety of domains.
         <br />
         <br />
         Being shifted to an online medium, Robotronics has scaled up to become one
@@ -69,6 +73,11 @@
         This year, there will be 11 events taking place for both juniors and seniors.
         There will be one school crowned as the overall winner after taking into
         consideration all the 11 events.
+        <br /><br /><a href="https://t11e.us/eventguide" target="_blank"
+          ><button class="section-button"
+            >Event Guide&nbsp;&nbsp;&gt;
+          </button></a
+        >
       </p>
     </div>
     <div class="right">
@@ -78,7 +87,6 @@
   <div class="third-section">
     <div class="left">
       <img src="/assets/images/tsis.png" alt="ts-illus-2" />
-      <span style="text-align: center; display: block;">Tech Syndicate International School</span>
     </div>
     <div class="right">
       <h1 style="color: #16e16e;">Tech Syndicate</h1>
@@ -93,7 +101,11 @@
         programmers, and filmmakers who dominate their fields. The members of the
         club have won several inter-school, national and international events, and
         have repeatedly brought accolades to the school.
-        <br/><br/>Revolutionize.
+        <br/><br/><Link to="members"
+        ><button class="section-button"
+          >Members&nbsp;&nbsp;&gt;
+        </button></Link
+      >
       </p>
     </div>
   </div>
@@ -165,17 +177,35 @@
     padding: 0.8vh 1.8vw;
     transition: all 0.2s ease-out;
     display: inline-block;
-    }
+  }
 
   .nav-link-button:hover {
     transform: translateY(-0.5vh);
   }
 
+  .section-button {
+    text-decoration: none;
+    border: 1px solid #00ae40;
+    background-color: #00ae40;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1vw;
+    margin-left: 0;
+    padding: 0.8vh 1vw;
+    transition: all 0.2s ease-out;
+    display: inline-block;
+  }
+
+  .section-button:hover {
+    transform: translateX(0.5vh);
+    cursor: pointer;
+  }
+
   .second-section {
-    height: 60vh;
+    height: 75vh;
     width: 80vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -223,10 +253,10 @@
   }
 
   .third-section {
-    height: 60vh;
+    height: 75vh;
     width: 100vw;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;

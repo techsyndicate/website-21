@@ -1,12 +1,13 @@
 <script>
   export let event, description, eligibility, participants, format, icon, color, buttonText;
+  export let breakWord = false;
 </script>
 
 <div class="card" style="background: {color};">
   <h3>{event}</h3>
 
   <p>Eligibility: {eligibility}<br />Participants: {participants}</p>
-  <p>{description}</p>
+  <p style="word-wrap: {breakWord ? 'break-word' : 'normal'}; word-break: {breakWord ? 'break-all' : 'normal'}">{description}</p>
 
   <div class="bottom-items">
     <a href="{format}" target="_blank"><button type="button" class="card-button" style="color: {color};">{buttonText}&nbsp;&gt;</button></a>

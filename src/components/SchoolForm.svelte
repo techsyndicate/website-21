@@ -42,7 +42,7 @@
         "Jr. Robotics": 1,
         "Paint 3D": 1,
         "Adobe Spark": 1,
-        Minecraft: 1
+        Minecraft: 2
     }
     let checkedEvents = [];
     let schoolFields = ['school-name', 'club-name', 'club-email', 'teacher-incharge-name', 'teacher-incharge-number', 'student-incharge-name', 'student-incharge-number', ]

@@ -1,29 +1,33 @@
-<svelte:head>
-  <title>TS | Home</title>
-</svelte:head>
-
 <script>
   import BigPicture from "bigpicture";
-  window.addEventListener('click', (e) => {
-    if(e.target.id === "watch-icon" || e.target.id === "watch-text") {
+  import { Link } from "svelte-navigator";
+
+  window.addEventListener("click", (e) => {
+    if (e.target.id === "watch-icon" || e.target.id === "watch-text") {
       BigPicture({
         el: e.target,
         ytSrc: "erE1Nf2hCmk",
         dimensions: [960, 540],
       });
     }
-  })
+  });
 </script>
+
+<svelte:head>
+  <title>TS | Home</title>
+</svelte:head>
 
 <body>
   <div class="first-section">
-    <img src="/assets/images/illus-mob.png" alt="illus-mob">
+    <img src="/assets/images/illus-mob.png" alt="illus-mob" />
     <div class="text">
       <p>26th July - 6th August</p>
       <h1>ROBOTRONICS '21</h1>
       <div class="buttons">
-        <a href="https://t11e.us/server" style="text-decoration: none;" target="_blank"
-          ><button class="nav-link-button">Discord</button></a
+        <a
+          href="https://t11e.us/server"
+          style="text-decoration: none;"
+          target="_blank"><button class="nav-link-button">Discord</button></a
         >
         <a class="video-play-button" id="play">
           <span class="watch" id="watch-text">
@@ -52,9 +56,9 @@
   <div class="second-section">
     <p>
       Robotronics '21, the 8th edition of Tech Syndicate's annual event, will
-      take place from 20th July to 30th July. Beginning as a robotics
-      exclusive symposium, Robotronics has now evolved and branched out to
-      include in events across a much wider variety of domains.
+      take place from 20th July to 30th July. Beginning as a robotics exclusive
+      symposium, Robotronics has now evolved and branched out to include in
+      events across a much wider variety of domains.
       <br />
       <br />
       Being shifted to an online medium, Robotronics has scaled up to become one
@@ -63,28 +67,33 @@
       <br />
       <br />
       This year, there will be 11 events taking place for both juniors and seniors.
-      There will be one school crowned as the overall winner after taking into
-      consideration all the 11 events.
+      There will be one school crowned as the overall winner after taking into consideration
+      all the 11 events.
+      <br /><br /><a href="https://t11e.us/eventguide" target="_blank"
+        ><button class="section-button">Event Guide&nbsp;&nbsp;&gt; </button></a
+      >
     </p>
-    <img src="/assets/images/tscircuitglow.png" alt="tscircuitglow">
+    <img src="/assets/images/tscircuitglow.png" alt="tscircuitglow" />
   </div>
   <div class="third-section">
     <h1>Tech Syndicate</h1>
     <p>
       Established in 2016, Tech Syndicate is the technology club of Amity
       International School, Sector-46, Gurgaon. The club works constantly to
-      encourage students to learn new technologies and keep up with the
-      rapidly progressing sector of computer science.
+      encourage students to learn new technologies and keep up with the rapidly
+      progressing sector of computer science.
       <br />
       <br />
       Through the years, it has transformed into a family of designers, developers,
-      programmers, and filmmakers who dominate their fields. The members of the
-      club have won several inter-school, national and international events, and
-      have repeatedly brought accolades to the school.
-      <br/><br/>Revolutionize.
+      programmers, and filmmakers who dominate their fields. The members of the club
+      have won several inter-school, national and international events, and have
+      repeatedly brought accolades to the school.
+      <br /><br />
+      <Link to="members"
+        ><button class="section-button">Members&nbsp;&nbsp;&gt;</button></Link
+      >
     </p>
-    <img src="/assets/images/tsis.png" alt="tscircuitglow">
-    <p id="caption">Tech Syndicate International School</p>
+    <img src="/assets/images/tsis.png" alt="tscircuitglow" style="margin-bottom: 13vh;"/>
   </div>
 </body>
 
@@ -144,7 +153,7 @@
     margin-left: 3vw;
   }
 
-  button {
+  .nav-link-button {
     height: 8vw;
     width: 20vw;
     border: none;
@@ -152,7 +161,7 @@
     padding-left: 1vw;
     padding-right: 1vw;
     color: white;
-    background-color: #00AF3B;
+    background-color: #00af3b;
     font-size: 3.5vw;
     border-radius: 5px;
   }
@@ -161,9 +170,27 @@
     transform: translateY(-0.5vh);
   }
 
+  .section-button {
+    text-decoration: none;
+    border: 1px solid #00ae40;
+    background-color: #00ae40;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 3.5vw;
+    margin-left: 0;
+    padding: 1vh 2vw;
+    transition: all 0.2s ease-out;
+    display: inline-block;
+  }
+
+  .section-button:hover {
+    transform: translateX(0.5vh);
+    cursor: pointer;
+  }
+
   .video-play-button {
     text-decoration: none;
-    margin-top: -0.5vw;;
+    margin-top: -0.5vw;
   }
 
   .video-play-button:hover {

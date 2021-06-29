@@ -38,11 +38,7 @@
       Hardware: 2,
       Crossword: 2,
       Surprise: 2,
-      "Group Discussion": 1,
-      "Jr. Robotics": 1,
-      "Paint 3D": 1,
-      "Adobe Spark": 1,
-      Minecraft: 1
+      "Group Discussion": 1
   }
   let checkedEvents = [];
   let schoolFields = ['school-name', 'team-name', 'team-email', 'student-incharge-name', 'student-incharge-number']
@@ -217,14 +213,6 @@
       <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Group Discussion" class="larger"/><span class="text">Group Discussion</span></label><br>
       <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Surprise" class="larger"/><span class="text">Surprise</span></label><br>
       <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Hardware" class="larger"/><span class="text">Hardware</span></label><br>
-  </div>
-  <div class="left side">
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Jr. Robotics" class="larger"/><span class="text">Jr. Robotics</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Minecraft" class="larger"/><span class="text">Minecraft</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Adobe Spark" class="larger"/><span class="text">Adobe Spark</span></label><br>
-  </div>
-  <div class="right">
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Paint 3D" class="larger"/><span class="text">Paint 3D</span></label><br>
   </div>
 </div>
 

@@ -29,6 +29,7 @@
           color={event.color}
           format={event.format}
           buttonText={event.buttonText}
+          breakWord={event.breakWord}
         />
       {/each}
     </div>

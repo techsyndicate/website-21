@@ -279,7 +279,7 @@
 
   .sidebar .links {
     height: 100%;
-    width: 40vw;
+    width: 100vw;
     margin: auto;
     text-align: center;
     padding-top: 32vh;
@@ -306,7 +306,6 @@
     font-size: 5vw;
     padding: 1vh 3vw;
     margin-top: 3vw;
-    margin-left: 3vw;
   }
 
   .sidebar-nav-link-active {

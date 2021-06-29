@@ -25,10 +25,10 @@
             "eligibility": "Open",
             "participants": "Open",
             "description": "Google is your best friend; the mods are not.",
-            "format": "https://t11e.us/encryptid/format",
+            "format": "https://t11e.us/encryptid/server",
             "icon": "/assets/icons/encryptid.svg",
             "color": "#891145",
-            "buttonText": "Format"
+            "buttonText": "Server"
         }
     ],
     [
@@ -46,7 +46,7 @@
             "name": "Group Discussion",
             "eligibility": "IX-XII",
             "participants": "1",
-            "description": "An engaging panel discussion debating the rights and wrongs of the latest technology trends/issues.",
+            "description": "An engaging panel discussion debating the rights and wrongs of the latest technology trends and issues.",
             "format": "https://t11e.us/gd/prelims",
             "icon": "/assets/icons/gd.svg",
             "color": "#7C457C",
@@ -56,11 +56,12 @@
             "name": "Surprise",
             "eligibility": "IX-XII",
             "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "description": "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>--.++++++++++++++++.-----------------.++++++++.+++++.--------.+++++++++++++++.------------------.++++++++.",
             "format": "https://t11e.us/surprise",
             "icon": "/assets/icons/surprise.svg",
             "color": "#A89100",
-            "buttonText": "Prelims"
+            "buttonText": "Prelims",
+            "breakWord": true
         }
     ],
     [
@@ -68,7 +69,7 @@
             "name": "Hardware",
             "eligibility": "IX-XII",
             "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "description": "An innovation challenge where you showcase your proficiency by attempting to solve a real-world problem with hardware toolkits.",
             "format": "https://t11e.us/hardware/prelims",
             "icon": "/assets/icons/hardware.svg",
             "color": "#7542B1",
@@ -76,9 +77,9 @@
         },
         {
             "name": "Jr. Robotics",
-            "eligibility": "IX-XII",
-            "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "eligibility": "VI-VIII",
+            "participants": "1",
+            "description": "A signature robotics event where you display your creativity and problem-solving abilities using the ever-growing field of robotics.",
             "format": "https://t11e.us/jrrobo/format",
             "icon": "/assets/icons/jrrobo.svg",
             "color": "#009A35",
@@ -86,9 +87,9 @@
         },
         {
             "name": "Minecraft",
-            "eligibility": "IX-XII",
+            "eligibility": "VII-IX",
             "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "description": "Unleash your creativity in an infinite world where you are bounded only by your thinking ability.",
             "format": "https://t11e.us/minecraft/format",
             "icon": "/assets/icons/minecraft.svg",
             "color": "#1E85A3",
@@ -98,9 +99,9 @@
     [
         {
             "name": "Adobe Spark",
-            "eligibility": "IX-XII",
-            "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "eligibility": "V-VI",
+            "participants": "1",
+            "description": "Your canvas is everywhere in a way that was never possible before, and every story can reach every single surface.",
             "format": "https://t11e.us/adobespark/format",
             "icon": "/assets/icons/adobespark.svg",
             "color": "#C18600",
@@ -108,9 +109,9 @@
         },
         {
             "name": "Paint 3D",
-            "eligibility": "IX-XII",
-            "participants": "2",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+            "eligibility": "III-IV",
+            "participants": "1",
+            "description": "“Life is a big canvas—throw all the paint you can on it.” Exhibit your artistry using Paint 3D.",
             "format": "https://t11e.us/paint3d/format",
             "icon": "/assets/icons/paint3d.svg",
             "color": "#930028",
