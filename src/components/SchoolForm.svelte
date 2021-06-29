@@ -17,6 +17,21 @@
         shorterText = false
       }
     })
+    
+    const pauseForm = () => {
+      notyf.success({
+        message: 'Waking up the Registration API',  
+        duration: 0,
+        icon: false,
+        dismissible: false
+      })
+    }
+
+    const resumeForm = () => {
+      document.getElementById('schoolForm').getElementsByTagName('button')[0].disabled = false
+      notyf.dismissAll()
+    }
+
     let maxParticipants = {
         Hackathon: 3,
         Designathon: 3,
@@ -97,6 +112,7 @@
           } 
         })
         console.log(formData)
+        pauseForm()
         fetch('https://ts-reg-21.herokuapp.com/school', {
             method: "POST",
             body: JSON.stringify(formData),
@@ -106,15 +122,18 @@
           }
         ).then(async(response) => {
             const resp = await response.json()
+            resumeForm()
             notyf.success(resp);
             setTimeout(() => {
               window.location.reload();
             }, 2000);
           })
           .catch(err => {
+            resumeForm()
             notyf.error(err);
           });
       } else {
+        document.getElementById('schoolForm').getElementsByTagName('button')[0].disabled = false
         errors.forEach(err => {
           notyf.error(err);
         });
@@ -122,13 +141,10 @@
     }
 
     window.addEventListener('click', (e) => {
-          if (e.target.id === "school-submit-button") {
-            submitSchoolForm();
-          }
-          else if(e.target.checked === false) {
-            if(checkedEvents.includes(e.target.value)) {
-              removeEvent(e.target.value)
-            } 
+        if (e.target.checked === false) {
+          if(checkedEvents.includes(e.target.value)) {
+            removeEvent(e.target.value)
+          } 
         } else if(e.target.checked === true) {
           addEvent(e.target.value)
         }
@@ -137,10 +153,12 @@
     window.addEventListener('submit', (e) => {
       e.preventDefault()
       if(e.target.id === "schoolForm") {
+        document.getElementById('schoolForm').getElementsByTagName('button')[0].disabled = true
         const recaptchaResponse = grecaptcha.getResponse();
         console.log(recaptchaResponse)
         if(recaptchaResponse.length === 0) 
         { 
+          resumeForm()
           notyf.error('CAPTCHA verification failed. Please try again.') 
         } else {
           fetch(`https://ts-reg-21.herokuapp.com/verify?response=${recaptchaResponse}`)
@@ -150,12 +168,17 @@
             if(response.success) {
               submitSchoolForm();
             } else {
-              notyf.error('CAPTCHA verification failed. Please try again.')
+              if(response['error-codes'][0] === "timeout-or-duplicate") {
+                submitSchoolForm()
+              } else {
+                resumeForm()
+                notyf.error('CAPTCHA verification failed. Please try again.')
+              }
             }
           })
           .catch(err => {
+            resumeForm()
             console.log(err)
-            notyf.error('CAPTCHA verification failed. Please try again.')
           })
         }
       }
