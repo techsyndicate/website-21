@@ -132,13 +132,11 @@
   window.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (e.target.id === "indiForm") {
-      document
-        .getElementById("indiForm")
-        .getElementsByTagName("button")[0].disabled = true;
+      document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = true;
       const recaptchaResponse = grecaptcha.getResponse();
-      console.log(recaptchaResponse);
       if (recaptchaResponse.length === 0) {
         notyf.error("CAPTCHA verification failed. Please try again.");
+        document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
       } else {
         const submitNotification = notyf.success({
           message: "Submitting your form.",
@@ -156,9 +154,7 @@
         } else {
           notyf.error(status.message);
           notyf.dismiss(submitNotification);
-          document
-            .getElementById("indiForm")
-            .getElementsByTagName("button")[0].disabled = false;
+          document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
         }
       }
     }
