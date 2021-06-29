@@ -123,6 +123,8 @@
         return { success: false, message: err };
       }
     } else {
+      document.getElementById("schoolForm").getElementsByTagName("button")[0].disabled = false;
+      notyf.dismissAll();
       errors.forEach((err) => {
         notyf.error(err);
       });
