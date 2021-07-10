@@ -28,7 +28,7 @@
     Crossword: 2,
     Surprise: 2,
     "Group Discussion": 1,
-    Robotics: 1,
+    Robotics: 2,
     "Paint 3D": 1,
     "Adobe Spark": 1,
     Minecraft: 2,
