@@ -19,7 +19,7 @@
 <body>
   <Jumbotron
     title="Register"
-    description="You can register with your school or as an independent team. Independent teams will not be eligible for the overall trophy. The deadline to register is July 12, 2021."
+    description="You can register with your school or as an independent team. Independent teams will not be eligible for the overall trophy. The deadline to register is July 19, 2021."
   />
   <div style="margin-top: 5vh"></div>
   <div class="first-section">
