@@ -1,7 +1,3 @@
-<svelte:head>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</svelte:head>
-
 <script>
   import { notyf } from "./notyf";
 
@@ -57,7 +53,32 @@
     checkedEvents = checkedEvents;
   };
 
-  const submitIndiForm = async () => {
+  const submitIndiForm = async (formData) => {
+    try {
+      const response = await (
+        await fetch("https://ts-reg-21.herokuapp.com/independent", {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+        })
+      ).json();
+      return { success: true, message: response };
+    } catch (err) {
+      return { success: false, message: err };
+    }
+  };
+
+  window.addEventListener("click", (e) => {
+    if (e.target.checked === false) {
+      if (checkedEvents.includes(e.target.value)) {
+        removeEvent(e.target.value);
+      }
+    } else if (e.target.checked === true) {
+      addEvent(e.target.value);
+    }
+  });
+
+  const handleSubmit = async () => {
     let formData = {};
     formData["events"] = checkedEvents;
     let errors = [];
@@ -71,6 +92,18 @@
         });
         errors.push(`Please fill in ${eventFullName.toLowerCase().trim()}.`);
       }
+    });
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+      notyf.error("CAPTCHA verification failed. Please try again.");
+      return;
+    }
+
+    notyf.success({
+      message: "Submitting your form.",
+      duration: 0,
+      dismissible: false,
     });
 
     if (errors.length === 0) {
@@ -88,12 +121,8 @@
             } else {
               detailName = pf.toLowerCase();
             }
-            if (
-              document.getElementsByClassName(eventClassName)[0].value.trim()
-                .length !== 0
-            ) {
-              participant[detailName] =
-                document.getElementsByClassName(eventClassName)[0].value;
+            if (document.getElementsByClassName(eventClassName)[0].value.trim().length !== 0) {
+              participant[detailName] = document.getElementsByClassName(eventClassName)[0].value;
             } else {
               participant[detailName] = "undefined";
             }
@@ -101,126 +130,192 @@
           formData[fieldName] = participant;
         }
       });
-
-      try {
-        const response = await (
-          await fetch("https://ts-reg-21.herokuapp.com/independent", {
-            method: "POST",
-            body: JSON.stringify(formData),
-            headers: { "Content-Type": "application/json; charset=utf-8" },
-          })
-        ).json();
-        return { success: true, message: response };
-      } catch (err) {
-        return { success: false, message: err };
-      }
     } else {
-      document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
       notyf.dismissAll();
-      errors.forEach((err) => notyf.error(err));
+      errors.forEach(err => notyf.error(err));
+      return;
+    }
+
+    const status = await submitIndiForm(formData);
+
+    if (status.success) {
+      notyf.dismissAll();
+      notyf.success(status.message);
+      setTimeout(() => window.location.reload(), 2000);
+      return;
+    } else {
+      notyf.error(status.message);
+      notyf.dismissAll();
+      return;
     }
   };
-
-  window.addEventListener("click", (e) => {
-    if (e.target.checked === false) {
-      if (checkedEvents.includes(e.target.value)) {
-        removeEvent(e.target.value);
-      }
-    } else if (e.target.checked === true) {
-      addEvent(e.target.value);
-    }
-  });
-
-  window.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    if (e.target.id === "indiForm") {
-      document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = true;
-      const recaptchaResponse = grecaptcha.getResponse();
-      if (recaptchaResponse.length === 0) {
-        notyf.error("CAPTCHA verification failed. Please try again.");
-        document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
-      } else {
-        const submitNotification = notyf.success({
-          message: "Submitting your form.",
-          duration: 0,
-          dismissible: false,
-        });
-
-        submitNotification;
-        const status = await submitIndiForm();
-
-        if (status.success) {
-          notyf.dismiss(submitNotification);
-          notyf.success(status.message);
-          setTimeout(() => window.location.reload(), 2000);
-        } else {
-          notyf.error(status.message);
-          notyf.dismiss(submitNotification);
-          document.getElementById("indiForm").getElementsByTagName("button")[0].disabled = false;
-        }
-      }
-    }
-  });
 </script>
 
+<svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</svelte:head>
+
 <p>School Name</p>
-<input type="text" placeholder="Amity International School, Sector-46" class="school-name">
+<input
+  type="text"
+  placeholder="Amity International School, Sector-46"
+  class="school-name"
+/>
 <div class="inline">
-<div>
-  <p>Team Name</p>
-  <input type="text" placeholder="Clubless" id="inline-input" class="team-name">
-</div>
-<div>
-  <p>Team Email</p>
-  <input type="text" placeholder="clubless@gmail.com" id="longer-inline-input" class="team-email">
-</div>
+  <div>
+    <p>Team Name</p>
+    <input
+      type="text"
+      placeholder="Clubless"
+      id="inline-input"
+      class="team-name"
+    />
+  </div>
+  <div>
+    <p>Team Email</p>
+    <input
+      type="text"
+      placeholder="clubless@gmail.com"
+      id="longer-inline-input"
+      class="team-email"
+    />
+  </div>
 </div>
 <div class="inline">
-<div>
-  <p>Student Incharge</p>
-  <input type="text" placeholder="John Doe" id="inline-input" class="student-incharge-name">
-</div>
-<div>
-  <p>Student Incharge Number</p>
-  <input type="text" placeholder="+91 7070707070" id="longer-inline-input" class="student-incharge-number">
-</div>
+  <div>
+    <p>Student Incharge</p>
+    <input
+      type="text"
+      placeholder="John Doe"
+      id="inline-input"
+      class="student-incharge-name"
+    />
+  </div>
+  <div>
+    <p>Student Incharge Number</p>
+    <input
+      type="text"
+      placeholder="+91 7070707070"
+      id="longer-inline-input"
+      class="student-incharge-number"
+    />
+  </div>
 </div>
 <p>Choose Events</p>
 <div class="checkboxes">
   <div class="left">
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Hackathon" class="larger"/><span class="text">Hackathon</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Designathon" class="larger"/><span class="text">Designathon</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Crossword" class="larger"/><span class="text">Crossword</span></label><br>
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Hackathon"
+        class="larger"
+      /><span class="text">Hackathon</span></label
+    ><br />
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Designathon"
+        class="larger"
+      /><span class="text">Designathon</span></label
+    ><br />
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Crossword"
+        class="larger"
+      /><span class="text">Crossword</span></label
+    ><br />
   </div>
   <div class="left side">
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Group Discussion" class="larger"/><span class="text">Group Discussion</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Surprise" class="larger"/><span class="text">Surprise</span></label><br>
-      <label for="checkid" style="word-wrap: break-word"><input id="checkbox-id" name="checkid"  type="checkbox" value="Hardware" class="larger"/><span class="text">Hardware</span></label><br>
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Group Discussion"
+        class="larger"
+      /><span class="text">Group Discussion</span></label
+    ><br />
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Surprise"
+        class="larger"
+      /><span class="text">Surprise</span></label
+    ><br />
+    <label for="checkid" style="word-wrap: break-word"
+      ><input
+        id="checkbox-id"
+        name="checkid"
+        type="checkbox"
+        value="Hardware"
+        class="larger"
+      /><span class="text">Hardware</span></label
+    ><br />
   </div>
 </div>
 
 {#each checkedEvents as event}
-    <p id="event-name">{event}</p>
-    {#each [...Array(maxParticipants[event]).keys()] as index}
-        <div class="inline">
-            <div>
-                <p>{shorterText ? `P${index+1} Name` : `Participant ${index+1} Name`}</p>
-                <input type="text" placeholder="Jane Doe" id="participant-name-input" class={event + '-' + (index+1) + '-Name'}>
-            </div>
-            <div style="margin-left: -1vw">
-                <p>{shorterText ? `P${index+1} Class` : `Participant ${index+1} Class`}</p>
-                <input type="text" placeholder="XII" id="participant-class-input" class={event + '-' + (index+1) + '-Class'}>
-            </div>
-            <div style="margin-left: -1vw">
-                <p>{shorterText ? `P${index+1} Email` : `Participant ${index+1} Email`}</p>
-                <input type="text" placeholder="jane@gmail.com" id="participant-email-input"  class={event + '-' + (index+1) + '-Email'}>
-            </div>
-        </div>
-    {/each}
+  <p id="event-name">{event}</p>
+  {#each [...Array(maxParticipants[event]).keys()] as index}
+    <div class="inline">
+      <div>
+        <p>
+          {shorterText ? `P${index + 1} Name` : `Participant ${index + 1} Name`}
+        </p>
+        <input
+          type="text"
+          placeholder="Jane Doe"
+          id="participant-name-input"
+          class={event + "-" + (index + 1) + "-Name"}
+        />
+      </div>
+      <div style="margin-left: -1vw">
+        <p>
+          {shorterText
+            ? `P${index + 1} Class`
+            : `Participant ${index + 1} Class`}
+        </p>
+        <input
+          type="text"
+          placeholder="XII"
+          id="participant-class-input"
+          class={event + "-" + (index + 1) + "-Class"}
+        />
+      </div>
+      <div style="margin-left: -1vw">
+        <p>
+          {shorterText
+            ? `P${index + 1} Email`
+            : `Participant ${index + 1} Email`}
+        </p>
+        <input
+          type="text"
+          placeholder="jane@gmail.com"
+          id="participant-email-input"
+          class={event + "-" + (index + 1) + "-Email"}
+        />
+      </div>
+    </div>
+  {/each}
 {/each}
 
-<form method="POST" action="#" id="indiForm">
-  <div class="g-recaptcha" data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv" data-theme="dark" style="margin-top: 3vh;" id="recap"></div>
+<form id="indiForm" on:submit|preventDefault={handleSubmit}>
+  <div
+    class="g-recaptcha"
+    data-sitekey="6LeNPbwZAAAAAHdxxchL8tm-6X6Dx0P54tavUBfv"
+    data-theme="dark"
+    style="margin-top: 3vh;"
+    id="recap"
+  />
   <button type="submit">Register</button>
 </form>
 
