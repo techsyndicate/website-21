@@ -7,7 +7,6 @@
   import Members from "./pages/Members.svelte";
   import Alumni from "./pages/Alumni.svelte";
   import Learn from "./pages/Learn.svelte";
-  import Register from "./pages/Register.svelte";
   import Footer from "./components/Footer.svelte";
   import NotFound from "./pages/NotFound.svelte";
 
@@ -53,9 +52,6 @@
     </Route>
     <Route path="learn">
       <Learn />
-    </Route>
-    <Route path="register">
-      <Register />
     </Route>
     <Route component={NotFound} />
   </main>

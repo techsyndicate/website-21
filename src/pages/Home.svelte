@@ -6,7 +6,7 @@
     if (e.target.id === "watch-icon" || e.target.id === "watch-text") {
       BigPicture({
         el: e.target,
-        ytSrc: "fwLEBs853IE",
+        ytSrc: "aOh8vcir49E",
         dimensions: [960, 540],
       });
     }
@@ -27,9 +27,9 @@
       <p>July 20 – July 30, 2021</p>
       <div class="buttons">
         <a
-          href="https://t11e.us/server"
+          href="https://t11e.us/results"
           style="text-decoration: none;"
-          target="_blank"><span class="nav-link-button">Discord</span></a
+          target="_blank"><span class="nav-link-button">Results</span></a
         >
         <a class="video-play-button" id="play">
           <span class="watch" id="watch-text">

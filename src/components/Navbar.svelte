@@ -103,9 +103,6 @@
               ><span class="nav-link">Learn</span></Link
             >
           {/if}
-          <Link to="/register" style="text-decoration: none;"
-            ><span class="nav-link-button">Register</span></Link
-          >
         </div>
       </nav>
     {/if}
@@ -173,11 +170,6 @@
             ><p class="sidebar-nav-link" id="sidebar-link">Learn</p></Link
           >
         {/if}
-        <Link to="/register" style="text-decoration: none;"
-          ><button class="sidebar-nav-link-button" id="sidebar-link"
-            >Register</button
-          ></Link
-        >
       </div>
     </div>
   {/if}
