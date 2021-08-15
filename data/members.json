@@ -249,8 +249,10 @@
         {
             "name": "Chahat Arora",
             "role": "Member",
-            "image": "https://cdn.discordapp.com/avatars/838454172537192498/2913f6eb0a46ceca7ef0d8cb0f07f0e5.png?size=512",
-            "socials": {}
+            "image": "/assets/images/members/chahat.png",
+            "socials": {
+                "envelope": "mailto:chahat.arora@ais.amity.edu"
+            }
         }
     ]
 ]
