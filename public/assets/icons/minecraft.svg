@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="390" viewBox="0 0 390 390">
-  <defs>
-    <clipPath id="clip-Minecraft">
-      <rect width="390" height="390"/>
-    </clipPath>
-  </defs>
-  <g id="Minecraft" clip-path="url(#clip-Minecraft)">
-    <rect width="390" height="390" fill="rgba(255,255,255,0)"/>
-    <g id="Group_168" data-name="Group 168" transform="matrix(0.966, -0.259, 0.259, 0.966, -1927.72, -1461.664)">
-      <path id="Icon_simple-minecraft" data-name="Icon simple-minecraft" d="M83.864,100.639H67.095V83.864H33.544v16.775H16.775V67.093H33.544V58.7h33.55v8.389H83.864ZM67.095,0h33.544V33.544H67.095ZM0,0H33.544V33.544H0Z" transform="translate(1571.546 2099.546)" fill="none" stroke="#2cc1ed" stroke-miterlimit="1.414" stroke-width="5"/>
-      <g id="Rectangle_298" data-name="Rectangle 298" transform="translate(1538 2066)" fill="none" stroke="#2cc1ed" stroke-linejoin="bevel" stroke-width="7">
-        <rect width="167.229" height="167.229" rx="14" stroke="none"/>
-        <rect x="3.5" y="3.5" width="160.229" height="160.229" rx="10.5" fill="none"/>
-      </g>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="390" viewBox="0 0 390 390"><defs><clipPath id="clip-Minecraft"><rect width="390" height="390"/></clipPath></defs><g id="Minecraft" clip-path="url(#clip-Minecraft)"><rect width="390" height="390" fill="rgba(255,255,255,0)"/><g id="Group_168" data-name="Group 168" transform="matrix(0.966, -0.259, 0.259, 0.966, -1927.72, -1461.664)"><path id="Icon_simple-minecraft" fill="none" stroke="#2cc1ed" stroke-miterlimit="1.414" stroke-width="5" d="M83.864,100.639H67.095V83.864H33.544v16.775H16.775V67.093H33.544V58.7h33.55v8.389H83.864ZM67.095,0h33.544V33.544H67.095ZM0,0H33.544V33.544H0Z" data-name="Icon simple-minecraft" transform="translate(1571.546 2099.546)"/><g id="Rectangle_298" fill="none" stroke="#2cc1ed" stroke-linejoin="bevel" stroke-width="7" data-name="Rectangle 298" transform="translate(1538 2066)"><rect width="167.229" height="167.229" stroke="none" rx="14"/><rect width="160.229" height="160.229" x="3.5" y="3.5" fill="none" rx="10.5"/></g></g></g></svg>
