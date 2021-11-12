@@ -52,7 +52,7 @@
             "image": "https://github.com/gigabite-pro.png",
             "socials": {
                 "github": "https://github.com/gigabite-pro",
-                "globe": "https://nibble.ga/4qukzfuN9",
+                "globe": "https://chin2.tk",
                 "linkedin": "https://in.linkedin.com/in/vaibhavsharma190317",
                 "instagram": "https://instagram.com/_.chintuuu._"
             }
@@ -109,29 +109,16 @@
             }
         },
         {
-            "name": "Amogh Arya",
-            "role": "Member",
-            "image": "https://github.com/amogharya.png",
-            "socials": {
-                "envelope": "mailto:amogharya05@gmail.com",
-                "github": "https://github.com/amogharya",
-                "linkedin": "https://in.linkedin.com/in/amogharya",
-                "instagram": "https://instagram.com/amoghharya"
-            }
-        },
-        {
             "name": "Aayush Garg",
             "role": "Member",
-            "image": "https://github.com/gamer-12748.png",
+            "image": "https://github.com/gamer-1478.png",
             "socials": {
                 "envelope": "mailto:contact@aayushgarg.net",
-                "github": "https://github.com/gamer-12748",
+                "github": "https://github.com/gamer-1478",
                 "globe": "https://aayushgarg.net",
                 "linkedin": "https://in.linkedin.com/in/aayush-garg-585b6718b"
             }
-        }
-    ],
-    [
+        },
         {
             "name": "Anirudh Chaturvedi",
             "role": "Member",
@@ -141,7 +128,9 @@
                 "linkedin": "https://in.linkedin.com/in/AnirudhChaturvedi07",
                 "twitter": "https://twitter.com/graphtech_07"
             }
-        },
+        }
+    ],
+    [
         {
             "name": "Yash Madaan",
             "role": "Member",
@@ -172,9 +161,7 @@
                 "github": "https://github.com/yuvraajnarula",
                 "instagram": "https://instagram.com/yuvraaj.30"
             }
-        }
-    ],
-    [
+        },
         {
             "name": "Pulkit Handa",
             "role": "Member",
@@ -185,7 +172,9 @@
                 "globe": "https://pulkithanda.me",
                 "instagram": "https://instagram.com/itzz_pulkit.05"
             }
-        },
+        }
+    ],
+    [
         {
             "name": "Khanak Aggarwal",
             "role": "Member",
@@ -207,19 +196,6 @@
             }
         },
         {
-            "name": "Gobind Anand",
-            "role": "Member",
-            "image": "https://github.com/GobindAnand.png",
-            "socials": {
-                "envelope": "mailto:gobind13.anand@gmail.com",
-                "github": "https://github.com/GobindAnand",
-                "linkedin": "https://in.linkedin.com/in/Gobind Anand",
-                "instagram": "https://instagram.com/gobind.singh.anand"
-            }
-        }
-    ],
-    [
-        {
             "name": "Simadhri Mohith",
             "role": "Member",
             "image": "https://cdn.discordapp.com/attachments/844901722409402408/857621854075879424/image0.jpg",
@@ -236,7 +212,9 @@
                 "envelope": "mailto:bhavya.batra06@gmail.com",
                 "linkedin": "https://in.linkedin.com/in/BhavyaBatra06"
             }
-        },
+        }
+    ],
+    [
         {
             "name": "Nishant Navani",
             "role": "Member",
