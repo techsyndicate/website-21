@@ -132,16 +132,6 @@
     ],
     [
         {
-            "name": "Yash Madaan",
-            "role": "Member",
-            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497034957652008/IMG-0212.jpg",
-            "socials": {
-                "envelope": "mailto:thegodofgreatness343@gmail.com",
-                "github": "https://github.com/AlightKnight343",
-                "instagram": "https://instagram.com/YashMadaan420"
-            }
-        },
-        {
             "name": "Aayan Agarwal",
             "role": "Member",
             "image": "https://github.com/ion05.png",
@@ -165,16 +155,14 @@
         {
             "name": "Pulkit Handa",
             "role": "Member",
-            "image": "/assets/images/members/pulkithanda.png",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/935572783709175928/pulkithanda.png",
             "socials": {
                 "envelope": "mailto:pulkit.handa2005@gmail.com",
                 "github": "https://github.com/Pulkitchamp",
                 "globe": "https://pulkithanda.me",
                 "instagram": "https://instagram.com/itzz_pulkit.05"
             }
-        }
-    ],
-    [
+        },
         {
             "name": "Khanak Aggarwal",
             "role": "Member",
@@ -184,7 +172,9 @@
                 "github": "https://github.com/Khanak15",
                 "linkedin": "https://in.linkedin.com/in/Khanak Aggarwal"
             }
-        },
+        }
+    ],
+    [
         {
             "name": "Amogh Agrawal",
             "role": "Member",
@@ -205,17 +195,6 @@
             }
         },
         {
-            "name": "Bhavya Batra",
-            "role": "Member",
-            "image": "https://cdn.discordapp.com/attachments/844901722409402408/857497627159822346/8f7aadc4-bb55-40d9-82f4-fc4cf98b2443.png",
-            "socials": {
-                "envelope": "mailto:bhavya.batra06@gmail.com",
-                "linkedin": "https://in.linkedin.com/in/BhavyaBatra06"
-            }
-        }
-    ],
-    [
-        {
             "name": "Nishant Navani",
             "role": "Member",
             "image": "https://cdn.discordapp.com/attachments/844901722409402408/857578600727707658/New_Project_201.png",
@@ -227,7 +206,7 @@
         {
             "name": "Chahat Arora",
             "role": "Member",
-            "image": "/assets/images/members/chahat.png",
+            "image": "https://cdn.discordapp.com/attachments/844901722409402408/935573140845789274/unknown.png",
             "socials": {
                 "envelope": "mailto:chahat.arora@ais.amity.edu"
             }
